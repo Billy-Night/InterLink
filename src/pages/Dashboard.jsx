@@ -1,6 +1,6 @@
 import projectData from '../projectData'
 import ProjectCard from '../components/ProjectCard';
-import "./Dashborad.css";
+import "./Dashboard.css";
 
 const Dashboard = () => {
 

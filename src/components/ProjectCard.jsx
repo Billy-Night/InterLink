@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Dashboard.css';
+import '../pages/Dashboard.css';
 
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
