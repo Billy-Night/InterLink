@@ -8,24 +8,23 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Avatar, Chip, Paper } from '@mui/material';
-import { MyContext } from '../context/MyProvider';
+// import { MyContext } from '../context/MyProvider';
 
 const ProjectCard = (props) => {
-  const context = useContext(MyContext);
+  // const context = useContext(MyContext);
   const [display, setDisplay] = useState(true);
 
-  const handleDelete = () => {
-    setDisplay(false);
-  };
+  const handleDelete = () => setDisplay(false);
 
+  //! Paper is a styled div, CardMedia = img
   return (
     // onClick={() => context.handleCardId(props.id)}
     <Paper sx={{ maxWidth: "350px", minWidth: "200px", p: "2rem" }} elevation={12}>
       <CardMedia
-        component=""
+        component="img"
         alt="green iguana"
         height="140"
-        image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
+        image={props.image}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

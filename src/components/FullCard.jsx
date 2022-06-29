@@ -5,6 +5,7 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { CardMedia, Chip, ListItem } from '@mui/material';
 // import { MyContext } from '../context/MyProvider';
 
 const style = {
@@ -29,6 +30,30 @@ const FullCard = (props) => {
   };
   const handleClose = () => setOpen(false);
 
+  //* data to be rendered with props & map
+  // {
+  //   id: 1,
+  //   name: "AutoScript",
+  //   // image: AutoScripImg,
+  //   location: "Lyon",
+  //   type: "Web Application",
+  //   description:
+  //     "AutoScript is a  bringing in a new way to measure tire wear with the aid of web development",
+  //   industry: "Automotive",
+  //   technologies: ["React", "JavaScript", "Express", "Node.js", "MySQL"],
+  //   team: {
+  //     Manager: "Tom Cruise",
+  //     ScrumMaster: "Jane Doe",
+  //     TechLead: "Mark zuckerberg",
+  //     WebDeveloper: "Elon Musk",
+  //     JuniorDeveloper: "Bill Gates",
+  //     DevOps: "Steve Carrell",
+  //   },
+  //   resources: "",
+  //   employeeviews: 10,
+  //   requestaccess: "Unavailable",
+  // },
+
   return (
     <div>
       <Button onClick={handleOpen}>Show Details</Button>
@@ -44,14 +69,31 @@ const FullCard = (props) => {
         }}
       >
         <Fade in={open}>
+          {/*//! All of this can be replaced!  */}
           <Box sx={style}>
             <Typography id="transition-modal-title" variant="h6" component="h2">
-              Text in a modal
+            {props.name}
             </Typography>
+            <CardMedia
+              component="img"
+              alt="green iguana"
+              height="140"
+              image={props.image}
+            />
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
               {props.description}
             </Typography>
+            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+              {props.location}
+            </Typography>
+            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+              {props.type}
+            </Typography>
+            <Box>
+            {props.technologies.map((tech) => <Chip sx={{mr: "10px"}} label={tech} color="primary" />)}
+            </Box>
           </Box>
+          {/*//! End of replace */}
         </Fade>
       </Modal>
     </div>
