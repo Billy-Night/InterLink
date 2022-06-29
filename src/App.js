@@ -11,7 +11,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <TopNavBar />
+      {/* <TopNavBar /> */}
       <Routes>
         <Route path="/" element={<LogReg />} />
         <Route path="/log" element={<Login />} />
