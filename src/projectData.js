@@ -10,8 +10,15 @@ export const projectData = [{
     project_industry: "",
     project_technologies: [
         "React", "JavaScript", "Express", "Node.js", "MySQL" 
-    ]
-    project_team: "",
+    ],
+    project_team: {
+        ProjectManager: "",
+        ScrumMaster: "",
+        TechLead: "",
+        WebDeveloper: "",
+        JuniorDeveloper: "",
+        DevOps: "",
+    },
     project_resources: "",
     employee_views: "",
     request_access: ""
@@ -23,8 +30,17 @@ export const projectData = [{
     project_type: "",
     project_description: "",
     project_industry: "",
-    project_technologies: "",
-    project_team: "",
+    project_technologies:  [
+        "React", "JavaScript", "Express", "Node.js", "MySQL" 
+    ],
+    project_team: {
+        ProjectManager: "",
+        ScrumMaster: "",
+        TechLead: "",
+        WebDeveloper: "",
+        JuniorDeveloper: "",
+        DevOps: "",
+    },
     project_resources: "",
     employee_views: "",
     request_access: ""
@@ -36,8 +52,17 @@ export const projectData = [{
     project_type: "",
     project_description: "",
     project_industry: "",
-    project_technologies: "",
-    project_team: "",
+    project_technologies:  [
+        "React", "JavaScript", "Express", "Node.js", "MySQL" 
+    ],
+    project_team: {
+        ProjectManager: "",
+        ScrumMaster: "",
+        TechLead: "",
+        WebDeveloper: "",
+        JuniorDeveloper: "",
+        DevOps: "",
+    },
     project_resources: "",
     employee_views: "",
     request_access: ""
@@ -49,8 +74,17 @@ export const projectData = [{
     project_type: "",
     project_description: "",
     project_industry: "",
-    project_technologies: "",
-    project_team: "",
+    project_technologies:  [
+        "React", "JavaScript", "Express", "Node.js", "MySQL" 
+    ],
+    project_team: {
+        ProjectManager: "",
+        ScrumMaster: "",
+        TechLead: "",
+        WebDeveloper: "",
+        JuniorDeveloper: "",
+        DevOps: "",
+    },
     project_resources: "",
     employee_views: "",
     request_access: ""
