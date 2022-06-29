@@ -14,7 +14,7 @@ const Register = () => {
       <Typography
         variant="h4"
         component="h1"
-        color="var(--menu-and-buttons-color)"
+        color="var(--main-color)"
       >
         Registration
       </Typography>
