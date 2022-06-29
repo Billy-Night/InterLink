@@ -1,6 +1,6 @@
 
 .project-container {
-    display: flexbox;
+    display: flex;
     justify-content: center;
     background-color: red;
 }
