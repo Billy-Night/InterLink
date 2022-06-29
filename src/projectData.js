@@ -1,5 +1,22 @@
+import React from "react";
 
-export const projectData = {
+
+export const projectData = [{
+    poject_name: "AutoScript",
+    progect_image: "",
+    project_location: "",
+    project_type: "",
+    project_description: "",
+    project_industry: "",
+    project_technologies: [
+        "React", "JavaScript", "Express", "Node.js", "MySQL" 
+    ]
+    project_team: "",
+    project_resources: "",
+    employee_views: "",
+    request_access: ""
+},
+{
     poject_name: "",
     progect_image: "",
     project_location: "",
@@ -11,5 +28,31 @@ export const projectData = {
     project_resources: "",
     employee_views: "",
     request_access: ""
-}
-
+},
+{
+    poject_name: "",
+    progect_image: "",
+    project_location: "",
+    project_type: "",
+    project_description: "",
+    project_industry: "",
+    project_technologies: "",
+    project_team: "",
+    project_resources: "",
+    employee_views: "",
+    request_access: ""
+},
+{
+    poject_name: "",
+    progect_image: "",
+    project_location: "",
+    project_type: "",
+    project_description: "",
+    project_industry: "",
+    project_technologies: "",
+    project_team: "",
+    project_resources: "",
+    employee_views: "",
+    request_access: ""
+},
+];
