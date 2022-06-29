@@ -18,7 +18,7 @@ const Login = () => {
             component="h1"
             color="var(--menu-and-buttons-color)"
           >
-            Ingresar
+            Login
           </Typography>
           <ApsideForm>
             <ApsideInputField

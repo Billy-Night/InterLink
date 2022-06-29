@@ -12,17 +12,17 @@ export const ApsideForm = styled("form")({
 export const ApsideInputField = styled(TextField)({
   width: "min(40vw, 40rem)",
   "& label.Mui-focused": {
-    color: "var(--menu-and-buttons-color)",
+    color: "#265184",
   },
   "& .MuiInput-underline:after": {
-    borderBottomColor: "var(--menu-and-buttons-color)",
+    borderBottomColor: "#265184",
   },
   "& .MuiOutlinedInput-root": {
     "&:hover fieldset": {
-      borderColor: "var(--menu-and-buttons-color)",
+      borderColor: "#265184",
     },
     "&.Mui-focused fieldset": {
-      borderColor: "var(--menu-and-buttons-color)",
+      borderColor: "#265184",
     },
   },
 });

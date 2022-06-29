@@ -48,7 +48,7 @@ const Register = () => {
           required
         />
         <Button type="submit" variant="contained" sx={{ width: "max(100px)" }}>
-          Create a new account
+          Register
         </Button>
       </ApsideForm>
     </Box>
