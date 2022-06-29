@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import FullCard from "./FullCard";
 import '../pages/Dashboard.css';
 
 import CardActions from '@mui/material/CardActions';
@@ -7,20 +8,19 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Avatar, Chip, Paper } from '@mui/material';
+import { MyContext } from '../context/MyProvider';
 
 const ProjectCard = (props) => {
+  const context = useContext(MyContext);
   const [display, setDisplay] = useState(true);
 
   const handleDelete = () => {
     setDisplay(false);
   };
 
-  const handleClick = () => {
-    console.log("click");
-  }
-
   return (
-    <Paper sx={{ maxWidth: "350px", minWidth: "200px", p: "2rem" }} elevation={12} onClick={handleClick}>
+    // onClick={() => context.handleCardId(props.id)}
+    <Paper sx={{ maxWidth: "350px", minWidth: "200px", p: "2rem" }} elevation={12}>
       <CardMedia
         component=""
         alt="green iguana"
@@ -43,6 +43,8 @@ const ProjectCard = (props) => {
         }
       </CardActions>
       <Chip avatar={<Avatar alt="Natacha" src="https://mui.com/static/images/cards/contemplative-reptile.jpg" />} label={props.team.Manager} variant="outlined" />
+      {/* Modal */}
+      <FullCard {...props}/>
     </Paper>
   );
 }
