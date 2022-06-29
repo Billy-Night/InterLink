@@ -14,8 +14,12 @@ const ProjectCard = (props) => {
     setDisplay(false);
   };
 
+  const handleClick = () => {
+    console.log("click");
+  }
+
   return (
-    <Paper sx={{ mb: "1rem", maxWidth: 345, p: "1rem" }} elevation={12}>
+    <Paper sx={{ maxWidth: "350px", minWidth: "200px", p: "2rem" }} elevation={12} onClick={handleClick}>
       <CardMedia
         component=""
         alt="green iguana"
