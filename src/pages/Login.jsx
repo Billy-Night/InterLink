@@ -16,7 +16,7 @@ const Login = () => {
           <Typography
             variant="h4"
             component="h1"
-            color="var(--menu-and-buttons-color)"
+            color="var(--main-color)"
           >
             Login
           </Typography>
@@ -39,9 +39,9 @@ const Login = () => {
               Log in
             </Button>
             <Link
-              color="var(--menu-and-buttons-color)"
+              color="var(--main-color)"
               href="/register"
-              underline="none"
+              underline="hover"
             >
               Register a new account
             </Link>
