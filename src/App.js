@@ -4,7 +4,7 @@ import TopNavBar from './components/TopNavBar.jsx';
 import Login from './pages/Login.jsx';
 import Register from './pages/Register';
 import Profile from './pages/Profile';
-import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
 
 import './App.css';
 
@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </div>
   );
