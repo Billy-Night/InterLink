@@ -1,7 +1,8 @@
 import React from "react";
+import Foodguider from "./Foodguider";
 
-
-export const projectData = [{
+export const projectData = [
+  {
     id: 1,
     poject_name: "AutoScript",
     progect_image: "",
@@ -10,44 +11,53 @@ export const projectData = [{
     project_description: "",
     project_industry: "",
     project_technologies: [
-        "React", "JavaScript", "Express", "Node.js", "MySQL" 
+      "React",
+      "JavaScript",
+      "Express",
+      "Node.js",
+      "MySQL",
     ],
     project_team: {
-        ProjectManager: "",
-        ScrumMaster: "",
-        TechLead: "",
-        WebDeveloper: "",
-        JuniorDeveloper: "",
-        DevOps: "",
+      ProjectManager: "",
+      ScrumMaster: "",
+      TechLead: "",
+      WebDeveloper: "",
+      JuniorDeveloper: "",
+      DevOps: "",
     },
     project_resources: "",
     employee_views: "",
-    request_access: ""
-},
-{
+    request_access: "",
+  },
+  {
     id: 2,
-    poject_name: "",
-    progect_image: "",
-    project_location: "",
-    project_type: "",
-    project_description: "",
-    project_industry: "",
-    project_technologies:  [
-        "React", "JavaScript", "Express", "Node.js", "MySQL" 
+    poject_name: "Foodguider",
+    progect_image: Foodguider,
+    project_location: "Berlin",
+    project_type: "Web Application",
+    project_description:
+      "An app helping you to find the best food places near your location",
+    project_industry: "Gastronomy",
+    project_technologies: [
+      "React",
+      "JavaScript",
+      "Express",
+      "Node.js",
+      "MongoDB",
     ],
     project_team: {
-        ProjectManager: "",
-        ScrumMaster: "",
-        TechLead: "",
-        WebDeveloper: "",
-        JuniorDeveloper: "",
-        DevOps: "",
+      ProjectManager: "Thomas Mueller",
+      ScrumMaster: "Claudia Roth",
+      TechLead: "Gordon Ramsay",
+      WebDeveloper: "Shaun Pelling",
+      JuniorDeveloper: "Emma Stone",
+      DevOps: "Hugh Laurie",
     },
     project_resources: "",
-    employee_views: "",
-    request_access: ""
-},
-{
+    employee_views: "8",
+    request_access: "Available",
+  },
+  {
     id: 3,
     poject_name: "",
     progect_image: "",
@@ -55,22 +65,26 @@ export const projectData = [{
     project_type: "",
     project_description: "",
     project_industry: "",
-    project_technologies:  [
-        "React", "JavaScript", "Express", "Node.js", "MySQL" 
+    project_technologies: [
+      "React",
+      "JavaScript",
+      "Express",
+      "Node.js",
+      "MySQL",
     ],
     project_team: {
-        ProjectManager: "",
-        ScrumMaster: "",
-        TechLead: "",
-        WebDeveloper: "",
-        JuniorDeveloper: "",
-        DevOps: "",
+      ProjectManager: "",
+      ScrumMaster: "",
+      TechLead: "",
+      WebDeveloper: "",
+      JuniorDeveloper: "",
+      DevOps: "",
     },
     project_resources: "",
     employee_views: "",
-    request_access: ""
-},
-{
+    request_access: "",
+  },
+  {
     id: 4,
     poject_name: "",
     progect_image: "",
@@ -78,19 +92,23 @@ export const projectData = [{
     project_type: "",
     project_description: "",
     project_industry: "",
-    project_technologies:  [
-        "React", "JavaScript", "Express", "Node.js", "MySQL" 
+    project_technologies: [
+      "React",
+      "JavaScript",
+      "Express",
+      "Node.js",
+      "MySQL",
     ],
     project_team: {
-        ProjectManager: "",
-        ScrumMaster: "",
-        TechLead: "",
-        WebDeveloper: "",
-        JuniorDeveloper: "",
-        DevOps: "",
+      ProjectManager: "",
+      ScrumMaster: "",
+      TechLead: "",
+      WebDeveloper: "",
+      JuniorDeveloper: "",
+      DevOps: "",
     },
     project_resources: "",
     employee_views: "",
-    request_access: ""
-},
+    request_access: "",
+  },
 ];
