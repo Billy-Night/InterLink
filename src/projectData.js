@@ -1,5 +1,5 @@
 import AutoScripImg from './AutoScript';
-
+import RevergImg from './Reverg';
 
 export const projectData = [{
     id: 1,
@@ -73,7 +73,7 @@ export const projectData = [{
 {
     id: 4,
     poject_name: "LinoScape",
-    progect_image: "",
+    progect_image: RevergImg,
     project_location: "Nantes",
     project_type: "Online store",
     project_description: "Building an online store for plate artworks",
