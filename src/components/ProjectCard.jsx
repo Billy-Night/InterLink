@@ -15,7 +15,7 @@ const ProjectCard = (props) => {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} >
       <CardMedia
         component=""
         alt="green iguana"
