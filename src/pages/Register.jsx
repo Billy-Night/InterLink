@@ -3,6 +3,8 @@ import { ApsideForm, ApsideInputField } from "../styles/FormStyles";
 
 const Register = () => {
 
+  //! Box = div, Typography = p or h1 etc.
+  //! ApsideForm & ApsideInput are from styles folder, styled form & input  
   return (
     <Box
       sx={{

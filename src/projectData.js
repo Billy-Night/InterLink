@@ -1,14 +1,13 @@
-// import AutoScripImg from '../public/images/AutoScripImg.png';
-
-// import RevergImg from './Reverg';
-// import Foodguider from "./Foodguider";
-// import Hoteliq from './Hoteliq';
+import AutoScriptImg from "./images/AutoScript.png";
+import FoodguiderImg from "./images/Foodguider.png";
+import HoteliqImg from "./images/Hoteliq.png";
+import RevergImg from "./images/Reverg.png";
 
 const projectData = [
   {
     id: 1,
     name: "AutoScript",
-    // image: AutoScripImg,
+    image: AutoScriptImg,
     location: "Lyon",
     type: "Web Application",
     description:
@@ -30,7 +29,7 @@ const projectData = [
   {
     id: 2,
     name: "Foodguider",
-    // image: Foodguider,
+    image: FoodguiderImg,
     location: "Berlin",
     type: "Web Application",
     description:
@@ -52,7 +51,7 @@ const projectData = [
   {
     id: 3,
     name: "Hoteliq",
-    // image: Hoteliq,
+    image: HoteliqImg,
     location: "Paris",
     type: "Web Application",
     description:
@@ -74,7 +73,7 @@ const projectData = [
   {
     id: 4,
     name: "LinoScape",
-    // image: RevergImg,
+    image: RevergImg,
     location: "Nantes",
     type: "Online store",
     description:
