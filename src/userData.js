@@ -5,4 +5,4 @@ export const userData = {
     age: 45,
     title: "Web Developer",
     site_location: "Lyon",
-}
+};

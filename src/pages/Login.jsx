@@ -1,5 +1,4 @@
 // import { useNavigate } from "react-router-dom";
-import ProjectCard from "../components/ProjectCard";
 import { ApsideForm, ApsideInputField } from "../styles/FormStyles";
 const { Typography, Button, Link } = require("@mui/material");
 const { Box } = require("@mui/system");
@@ -47,7 +46,6 @@ const Login = () => {
               Register a new account
             </Link>
           </ApsideForm>
-          <ProjectCard />
     </Box>
   );
 }

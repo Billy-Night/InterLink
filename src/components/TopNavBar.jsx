@@ -16,7 +16,7 @@ const TopNavBar = () => {
                     <Link to="/profile">User Profile</Link>
                 </li>
                 <li>
-                    <Link to="/home">Project Home</Link>
+                    <Link to="/dashboard">Project Dashboard</Link>
                 </li>
             </ul>
         </div>
