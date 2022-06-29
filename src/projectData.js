@@ -2,6 +2,7 @@ import React from "react";
 
 
 export const projectData = [{
+    id: 1,
     poject_name: "AutoScript",
     progect_image: "",
     project_location: "",
@@ -24,6 +25,7 @@ export const projectData = [{
     request_access: ""
 },
 {
+    id: 2,
     poject_name: "",
     progect_image: "",
     project_location: "",
@@ -46,6 +48,7 @@ export const projectData = [{
     request_access: ""
 },
 {
+    id: 3,
     poject_name: "",
     progect_image: "",
     project_location: "",
@@ -68,6 +71,7 @@ export const projectData = [{
     request_access: ""
 },
 {
+    id: 4,
     poject_name: "",
     progect_image: "",
     project_location: "",
