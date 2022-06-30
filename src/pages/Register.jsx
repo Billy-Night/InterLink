@@ -51,6 +51,7 @@ const Register = () => {
           justifyContent:"center",
           fontSize:"1.5em",
           marginInline:".5em",
+          marginBottom:"2%",
           fontFamily: "Montserrat, sans-serif"
           }}>{" "}APSIDE {" "}</span>collective
       </Typography>
