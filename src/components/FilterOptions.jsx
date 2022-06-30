@@ -19,6 +19,7 @@ const FilterOptions = (props) => {
         industries: ["IT", "Hospitality", "Automotive", "Textile", "ECommerce", "Food"],
         locations: ["Paris", "Nantes", "Montpeller", "Munich", "Brest", "Toulouse"],
         status: ["Beginning", "Middle", "End", "Overdue"],
+        teamvacancies: ["Open", "Full", ""]
       };
       return (
         <div>
@@ -46,18 +47,7 @@ const FilterOptions = (props) => {
             </li>
           );
         })}
-                <li>
-          <p>Industry</p>
-          <button></button>
-          <button></button>
-        </li>
-        <li></li>
-      </ul>
-
-      <button>By Locations</button>
-      <button>Availability</button>
-      <button>Industry</button>
-      <button></button>
+        </ul>
     </div>
   );
 };
