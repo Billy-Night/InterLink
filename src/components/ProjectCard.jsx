@@ -7,7 +7,6 @@ import './ProjectCard.css';
 const ProjectCard = (props) => {
   // const context = useContext(MyContext);
 
-  //! Paper is a styled div, CardMedia = img
   return (
     // onClick={() => context.handleCardId(props.id)}
 

@@ -17,7 +17,7 @@ const FilterOptions = (props) => {
           "C++",
         ],
         industries: ["IT", "Hospitality", "Automotive", "Textile", "ECommerce", "Food"],
-        locations: ["Paris", "Nantes", "Montpeller", "Munich", "Brest", "Toulouse"],
+        locations: ["Paris", "Nantes", "Montpellier", "Munich", "Brest", "Toulouse"],
         status: ["Beginning", "Middle", "End", "Overdue"],
         teamvacancies: ["Open", "Full", ""]
       };
