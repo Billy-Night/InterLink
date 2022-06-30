@@ -44,23 +44,25 @@ const FullCard = (props) => {
               </div>
               <div className="full-card__icon-and-p">
                 <button className="industry-btn" />
-                <p>{props.type}</p>
+                <p>{props.industry}</p>
               </div>
               <div className="full-card__icon-and-p">
                 <button className="tech-btn" />
-                <p>{props.type}</p>
+                {props.technologies.map((tech, index) =>
+                  <p key={index}>{tech}</p>
+                )}
               </div>
               <div className="full-card__icon-and-p">
                 <button className="status-btn" />
-                <p>{props.type}</p>
+                <p>{props.status}%</p>
               </div>
               <div className="full-card__icon-and-p">
                 <button className="pop-btn" />
-                <p>{props.type}</p>
+                <p>{props.employeeviews}</p>
               </div>
               <div className="full-card__icon-and-p">
                 <button className="parti-btn" />
-                <p>{props.type}</p>
+                <p>{Object.keys(props.team).length}</p>
               </div>
             </div>
             <div className="full-card__tags">

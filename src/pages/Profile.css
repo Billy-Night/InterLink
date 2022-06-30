@@ -1,5 +1,30 @@
 
+.prof-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 20%;
+    padding: 20px;
+    text-align: center;
+    margin: 2%, 10%, 2%, 10%;
+}
+
 .prof-container img {
     height: 80px;
     width: 80px;
+}
+
+.chip-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.prof-btn {
+    display: flex;
+    justify-content: center;
+}
+.prof-btn button {
+    padding: 4px;
+    
 }

@@ -3,10 +3,16 @@ import { Box, Button, Typography } from "@mui/material";
 import { fontFamily } from "@mui/system";
 import TopNavBar from "../components/TopNavBar";
 import { ApsideForm, ApsideInputField } from "../styles/FormStyles"
+import { useNavigate } from "react-router-dom";
 
 
 
 const Register = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/login");
+  };
 
   //! Box = div, Typography = p or h1 etc.
   //! ApsideForm & ApsideInput are from styles folder, styled form & input  
@@ -84,7 +90,7 @@ const Register = () => {
           // onChange={(event) => context.handleInput(event, "password")}
           required
         />
-        <Button 
+        <Button onClick={handleClick}
                     sx={{ 
                       width: "max(150px)",
                       fontSize: "20px",

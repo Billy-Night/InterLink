@@ -19,7 +19,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/test" element={<UserTech />} />
+        <Route path="/myprojects" element={<UserTech />} />
       </Routes>
     </div>
   );
