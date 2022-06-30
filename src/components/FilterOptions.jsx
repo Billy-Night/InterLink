@@ -1,16 +1,53 @@
+import { Link } from "react-router-dom";
+import "./FilterOptions.css";
 
-// import { Link } from 'react-router-dom';
 
+const FilterOptions = (props) => {
+  const { filterOptions, setFilterOptions } = props;
 
+  const availableFilters = {
+    technologies: [
+      "JavaScript",
+      "Sass",
+      "MySQL",
+      "Java",
+      "MongoDB",
+      "React",
+      "Node.js",
+      "Python",
+      "Angular",
+      "C++",
+    ],
+    industries: ["IT"],
+    locations: [],
+  };
 
-const FilterOptions = () => {
-    
-    const filterOptions = {
-        javascript: false,
-        Sass: false,
-    } 
+  return (
+    <div>
+      <p>This is the filters</p>
+      <ul>
+        <p>Technologies</p>
 
-    return (
+        {availableFilters.technologies.map((tech) => {
+          return (
+            <li className="list-item">
+              <span
+                onClick={() => {
+                  setFilterOptions({
+                    technologies: filterOptions.technologies.includes(tech)
+                      ? filterOptions.technologies.pop(tech)
+                      : filterOptions.technologies.push(tech),
+                    ...filterOptions,
+                  });
+                }}
+                className={`chip${
+                  filterOptions.technologies.includes(tech) ? " selected" : ""
+                }`}
+              >
+                {tech}
+              </span>
+            </li>
+            
         <div>
             <p>This is the filters</p>
             <ul>
@@ -71,6 +108,6 @@ const FilterOptions = () => {
             </ul>
         </div>
     )
-}
+};
 
 export default FilterOptions;

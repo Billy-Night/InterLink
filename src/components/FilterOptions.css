@@ -1,0 +1,22 @@
+.list-item {
+    list-style: none;
+    display: inline-block;
+}
+
+.chip {
+    display: block;
+    font-size: 1.5rem;
+    border: 1px solid;
+    border-color: dimgrey;
+    border-radius: .8em;
+    padding: .2em .4em;
+    margin: .2em .4em;
+}
+
+.chip:hover {
+    cursor: pointer;
+}
+
+.chip.selected {
+    background-color: azure;
+}
