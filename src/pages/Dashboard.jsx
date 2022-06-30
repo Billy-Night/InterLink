@@ -2,7 +2,7 @@ import projectData from '../projectData';
 import ProjectCard from '../components/ProjectCard';
 import './Dashboard.css';
 // import { Anchor, Filter } from '@mui/icons-material';
-import './Dashboard.css';
+
 import TopNavBar from '../components/TopNavBar';
 import FilterOptions from '../components/FilterOptions';
 import { useState } from 'react';
@@ -42,11 +42,12 @@ const Dashboard = () => {
             <button className="search__btn" />
           </div>
         </header>
-      </div>
-      <div>
-        {filteredData.map((e, index) => {
-          return <ProjectCard key={index} {...e} />;
-        })}
+
+        <main className="cards-container">
+          {filteredData.map((e, index) => {
+            return <ProjectCard key={index} {...e} />;
+          })}
+        </main>
       </div>
     </>
   );
