@@ -1,4 +1,6 @@
 const FilterOptions = () => {
+    
+
     return (
         <div>
             <p>This is the filters</p>

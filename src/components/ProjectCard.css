@@ -2,7 +2,7 @@
   font-family: 'Montserrat, sans-serif';
 }
 
-#dashboard__page > .cards-container > .project-card-container {
+.cards-container > .project-card-container {
   width: 15rem;
   height: 25rem;
   /* background-color: yellow; */
@@ -20,8 +20,7 @@
   position: relative;
 }
 
-#dashboard__page
-  > .cards-container
+.cards-container
   > .project-card-container
   > .project-card__img {
   background-color: #bbbbbb;
