@@ -10,7 +10,7 @@ const ProjectCard = (props) => {
   return (
     // onClick={() => context.handleCardId(props.id)}
 
-    <div className="cards-container">
+    <div className="cards-container" key={props.index}>
       <main className="project-card-container">
         <div className="project-card__img-container">
           <img src={props.image} alt="img" />

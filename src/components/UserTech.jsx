@@ -1,8 +1,9 @@
 import projectData from "../projectData";
 import userData from "../userData";
+import ProjectCard from "./ProjectCard";
 
 const UserTech = () => {
-  // const finalArray = projectData.map((element) => element.technologies).filter((match) => userData.technologies.includes(match));
+  // const arrayWithDuplicates = projectData.map((element) => element.technologies).filter((match) => userData.technologies.includes(match));
 
   // const JS = "Javascript";
   // const otherArray = projectData.filter((element) => element.technologies.includes(JS));
@@ -13,11 +14,36 @@ const UserTech = () => {
   const arrayOfArrays = projectData.map((project) => project.technologies);
   console.log(arrayOfArrays);
 
-  let finalArray = [];
-  const result = arrayOfArrays.forEach((array) => array.forEach((e) => userData.technologies.includes(e) ? finalArray.push(e) : null));
+  let arrayWithDuplicates = [];
+  const result = arrayOfArrays.forEach((array) => array.forEach((e) => userData.technologies.includes(e) ? arrayWithDuplicates.push(e) : null));
+  console.log(arrayWithDuplicates);
 
-  console.log(result);
-  console.log(finalArray);
+  const matchArray = [...new Set(arrayWithDuplicates)];
+  console.log(matchArray);
+
+  for (let i = 0; i < matchArray.length; i++) {
+
+  }
+
+  // matchArray.forEach((e) => projectData.technologies.includes(e) ? <FullCard {... projectData} /> : null)
+return(  
+  <>
+{  
+  projectData.filter((project) => project.technologies.includes(...matchArray)).map((project, index) => (<ProjectCard key={index} {...project} />))
+}
+  </>
+  );
+
+  //* test version
+  //* {  
+  //*   matchArray.forEach((element) => {projectData.filter((project) => project.technologies.includes(element)).map((project, index) => (<ProjectCard key={index} {...project} />))}) 
+  //* }
+
+
+  // console.log(result);
+  // console.log(arrayWithDuplicates);
+
+  // map over projectData, get technologies array and check if 
   
   // array.filter((tech) => userData.technologies.includes(tech)));
   // console.log(result);
@@ -31,17 +57,6 @@ const UserTech = () => {
   //   .map((quote, index) => (
   //     <QuoteCard key={index} {...quote} />
   //   ))}
-  
-
-
-  return(
-    <div>
-      <p>Test</p>
-    {/* <ul>
-    {finalArray.map((e) => <li>{e}</li>)}
-    </ul> */}
-    </div>
-  )
 }
 
 export default UserTech;
