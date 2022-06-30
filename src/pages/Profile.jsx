@@ -6,6 +6,7 @@ import userData from "../userData";
 import './Profile.css';
 import { Button, Chip } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import TopNavBar from '../components/TopNavBar';
 
 const Profile = () => {
     const navigate = useNavigate();
@@ -14,6 +15,7 @@ const Profile = () => {
 
     return (
         <div>
+            <TopNavBar />
             <SideNavBar />
             <div className='main-container'>
                 <Box
