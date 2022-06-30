@@ -1,3 +1,5 @@
+
+
 import projectData from '../projectData';
 import ProjectCard from '../components/ProjectCard';
 import './Dashboard.css';
@@ -8,13 +10,16 @@ import TopNavBar from '../components/TopNavBar';
 const Dashboard = () => {
   return (
 
-    <div className="project-container">
+    <div>
+      <TopNavBar />
+      <span className="project-container">
       {projectData.map((e, index) => {
         return <ProjectCard key={index} {...e} />;
+        
       })}
+      </span>
     </div>
   )
 }
 
 export default Dashboard;
-

@@ -13,8 +13,14 @@ const Register = () => {
     <Box
       sx={{
         marginTop: "5rem",
-        marginLeft: "2rem",
+        marginLeft: "10rem",
         marginRight: "2rem",
+        display: "flex",
+        flexDirection: "column",
+        gap: "2rem",
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: "2rem",
       }}
     >
       <Typography
