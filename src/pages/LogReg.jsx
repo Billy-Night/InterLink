@@ -1,5 +1,6 @@
 import '../App.css';
-import '../css/pages/LogReg.css';
+import './LogReg.css';
+import {Link} from "react-router-dom"
 
 const LogReg = () => {
   return (
@@ -9,11 +10,16 @@ const LogReg = () => {
       </header>
       <main>
         <h1 className="LogReg__title">Discover your Dream Project Here</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p></p>
       </main>
       <footer>
-        <button className="LogReg__btn bright">Register</button>
-        <button className="LogReg__btn dark">Sign In</button>
+        
+        {/* <Link to="/register" className="LogReg__btn bright"> */}
+          < button className="LogReg__btn bright" >Register</button>
+          {/* </Link> */}
+        
+        
+        <button className="LogReg__btn dark" action="">Sign In</button>
       </footer>
     </div>
   );
