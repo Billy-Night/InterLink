@@ -7,7 +7,6 @@ import './FullCard.css';
 import { Chip } from '@mui/material';
 
 const FullCard = (props) => {
-
   const [open, setOpen] = useState(false);
   const handleOpen = (id) => {
     setOpen(true);
@@ -16,7 +15,7 @@ const FullCard = (props) => {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Show Details</Button>
+      <Button onClick={handleOpen} />
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -30,22 +29,55 @@ const FullCard = (props) => {
       >
         <Fade in={open}>
           {/* You can edited this html and css */}
-          <div className='modal-full-card'>
-            <p>
-            {props.name}
-            </p>
-            <img src={props.image} alt="img"/>
-            <p>{props.description}</p>
-            <p>{props.location}</p>
-            <p>{props.type}</p>
-            <div>
-            {props.technologies.map((tech) => <Chip sx={{mr: "10px"}} label={tech} color="primary" />)}
+          <div className="modal-full-card">
+            <div className="full-card__img-container">
+              <img src={props.image} alt="img" />
+            </div>
+            <div className="full-card__main-section">
+              <div className="title-and-description">
+                <p className="full-card__title">{props.name}</p>
+                <p className="full-card__description">{props.description}</p>
+              </div>
+              <div className="full-card__icon-and-p">
+                <button className="location-btn" />
+                <p>{props.location}</p>
+              </div>
+              <div className="full-card__icon-and-p">
+                <button className="industry-btn" />
+                <p>{props.type}</p>
+              </div>
+              <div className="full-card__icon-and-p">
+                <button className="tech-btn" />
+                <p>{props.type}</p>
+              </div>
+              <div className="full-card__icon-and-p">
+                <button className="status-btn" />
+                <p>{props.type}</p>
+              </div>
+              <div className="full-card__icon-and-p">
+                <button className="pop-btn" />
+                <p>{props.type}</p>
+              </div>
+              <div className="full-card__icon-and-p">
+                <button className="parti-btn" />
+                <p>{props.type}</p>
+              </div>
+            </div>
+            <div className="full-card__tags">
+              {props.technologies.map((tech) => (
+                <Chip
+                  className="full-card__single-tag"
+                  sx={{ mr: '10px' }}
+                  label={tech}
+                  color="primary"
+                />
+              ))}
             </div>
           </div>
         </Fade>
       </Modal>
     </div>
   );
-}
+};
 
 export default FullCard;
