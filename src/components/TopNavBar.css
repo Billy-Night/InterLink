@@ -6,9 +6,13 @@
 
 .color-navbar {
     background-color: white;
+    outline: white;
+    border: white;
+    box-shadow: white;
+    border-bottom: 0;
 }
 
 .text-navbar {
     font-style: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Hind, sans-serif;
 }

@@ -1,7 +1,21 @@
 import '../App.css';
-import '../css/pages/LogReg.css';
+
+import './LogReg.css';
+
+import { useNavigate } from 'react-router-dom';
+
 
 const LogReg = () => {
+
+  const navigate = useNavigate();
+
+  const handleClickLogIn = () => {
+    navigate("/login");
+  }
+  const handleClickReg = () => {
+    navigate("/register")
+  }
+
   return (
     <div id="LogReg__page">
       <header>
@@ -9,11 +23,15 @@ const LogReg = () => {
       </header>
       <main>
         <h1 className="LogReg__title">Discover your Dream Project Here</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p></p>
       </main>
       <footer>
-        <button className="LogReg__btn bright">Register</button>
-        <button className="LogReg__btn dark">Sign In</button>
+        <button onClick={handleClickReg} className="LogReg__btn bright">
+          Register
+        </button>
+        <button onClick={handleClickLogIn} className="LogReg__btn dark">
+          Login
+        </button>
       </footer>
     </div>
   );
