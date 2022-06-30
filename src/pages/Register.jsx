@@ -1,6 +1,8 @@
+
 import { Box, Button, Typography } from "@mui/material";
 import TopNavBar from "../components/TopNavBar";
-import { ApsideForm, ApsideInputField } from "../styles/FormStyles";
+import { ApsideForm, ApsideInputField } from "../styles/FormStyles"
+
 
 
 const Register = () => {
