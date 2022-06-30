@@ -16,7 +16,7 @@ const Dashboard = () => {
 
   const filteredData = projectData.filter((project) => {
     if (filterOptions.technologies.length < 1) return true;
-    var found = false;
+    let found = false;
     filterOptions.technologies.forEach((techFilter) => {
       if(!found && project.technologies.includes(techFilter)) {
         found = true;
