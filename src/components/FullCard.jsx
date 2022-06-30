@@ -30,30 +30,6 @@ const FullCard = (props) => {
   };
   const handleClose = () => setOpen(false);
 
-  //* data to be rendered with props & map
-  // {
-  //   id: 1,
-  //   name: "AutoScript",
-  //   // image: AutoScripImg,
-  //   location: "Lyon",
-  //   type: "Web Application",
-  //   description:
-  //     "AutoScript is a  bringing in a new way to measure tire wear with the aid of web development",
-  //   industry: "Automotive",
-  //   technologies: ["React", "JavaScript", "Express", "Node.js", "MySQL"],
-  //   team: {
-  //     Manager: "Tom Cruise",
-  //     ScrumMaster: "Jane Doe",
-  //     TechLead: "Mark zuckerberg",
-  //     WebDeveloper: "Elon Musk",
-  //     JuniorDeveloper: "Bill Gates",
-  //     DevOps: "Steve Carrell",
-  //   },
-  //   resources: "",
-  //   employeeviews: 10,
-  //   requestaccess: "Unavailable",
-  // },
-
   return (
     <div>
       <Button onClick={handleOpen}>Show Details</Button>
