@@ -5,7 +5,10 @@ import './Dashboard.css';
 
 import TopNavBar from '../components/TopNavBar';
 import FilterOptions from '../components/FilterOptions';
+// My filter side bar
+
 import { useState } from 'react';
+import DiscoveryFilter from '../components/DiscoveryFilter';
 
 const Dashboard = () => {
   const [filterOptions, setFilterOptions] = useState({
@@ -29,6 +32,9 @@ const Dashboard = () => {
   return (
     <>
       <TopNavBar />
+      {/* my filter side navBar */}
+      {/* <DiscoveryFilter {...{ filterOptions, setFilterOptions }} /> */}
+
       <FilterOptions {...{ filterOptions, setFilterOptions }} />
       <div id="dashboard__page">
         <header>
