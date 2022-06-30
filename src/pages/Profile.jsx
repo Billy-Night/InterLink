@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import SideNavBar from "../components/SideNavBar";
+
 import userData from "../userData";
 import './Profile.css';
 import { Button, Chip } from '@mui/material';
@@ -16,7 +16,6 @@ const Profile = () => {
     return (
         <div>
             <TopNavBar />
-            <SideNavBar />
             <div className='main-container'>
                 <Box
                     sx={{
@@ -32,7 +31,10 @@ const Profile = () => {
                     <Paper elevation={3} >
                         <div className="prof-container">
                             <h1>Profile</h1>
-                            <img src={userData.image} alt=""/>
+                            <img src={userData.image} alt=""
+                            display="flex"
+                            textAlign="center" 
+                            />
                             <p>{userData.first_name} {userData.last_name}</p>
                             <p>Title: {userData.title}</p>
                             <p>Site Location: {userData.site_location}</p>
