@@ -16,8 +16,9 @@ const FilterOptions = (props) => {
           "Angular",
           "C++",
         ],
-        industries: ["IT"],
-        locations: [],
+        industries: ["IT", "Hospitality", "Automotive", "Textile", "ECommerce", "Food"],
+        locations: ["Paris", "Nantes", "Montpeller", "Munich", "Brest", "Toulouse"],
+        status: ["Beginning", "Middle", "End", "Overdue"],
       };
       return (
         <div>
