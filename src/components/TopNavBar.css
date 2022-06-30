@@ -1,5 +1,14 @@
 .logo-navbar {
     display: block;
-    height: 2rem;
+    height: 3rem;
+    background-color: white;
+}
 
+.color-navbar {
+    background-color: white;
+}
+
+.text-navbar {
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
