@@ -1,0 +1,115 @@
+/* #203d75;
+ #0091c0;
+
+ #ffffff;
+ #DFE5E7;
+ #D7C8CA
+ #fcede9
+ #fefbfb
+ #fefaf8
+ #fdf4f2
+ #fefaf8
+   background-color: rgba(233, 229, 237, 0.3);
+ */
+
+#LogReg__page {
+  height: 100vh;
+  /* margin: 1rem; */
+  background-color: rgba(233, 229, 237, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+#LogReg__page > header {
+  /* background-color: var(--bright-bg-color); */
+  width: 80vw;
+  height: 35vh;
+  /* background-color: white; */
+  border-radius: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-block-start: 5rem;
+}
+
+#LogReg__page > header > .LogReg__hero-img {
+  width: 100%;
+  height: 100%;
+
+  background-image: url('../../public/logo-apside-bleu.svg'); 
+  background-size: 50vw;
+  margin-left: 10%;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* border: blueviolet solid 2px; */
+}
+
+@media screen and (max-width: 480px) {
+
+  #LogReg__page > header > .LogReg__hero-img {
+    width: 100%;
+    height: 100%;
+  
+    background-image: url('../../public/logo-apside-bleu.svg'); 
+    background-size: 50vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+}
+
+#LogReg__page > main {
+  width: 90vw;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+#LogReg__page > main > .LogReg__title {
+  width: 35rem;
+  margin-inline: auto;
+
+  font-weight: 600;
+  font-size: 3rem;
+}
+#LogReg__page main > p {
+  width: 30rem;
+
+  margin-inline: auto;
+
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+#LogReg__page > footer {
+  min-width: 90%;
+  height: 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#LogReg__page > footer > .LogReg__btn {
+  min-width: 15rem;
+  min-height: 5rem;
+
+  font-size: 200%;
+
+  border-radius: 1rem;
+  border: 2px solid #ffffff;
+  background-color: #fff;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#LogReg__page > footer > .LogReg__btn.bright {
+  cursor: pointer;
+}
+
+#LogReg__page > footer > .LogReg__btn.dark {
+  cursor: pointer;
+  background: #e9e5ed;
+}
