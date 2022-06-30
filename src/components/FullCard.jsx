@@ -16,7 +16,7 @@ const FullCard = (props) => {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Show Details</Button>
+      <Button onClick={handleOpen} />
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
