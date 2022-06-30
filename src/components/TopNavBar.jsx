@@ -44,7 +44,7 @@ const TopNavBar = () => {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container className="color-navbar" maxWidth="xl" border="none" outline="none" box-shadow="none">
         <Toolbar disableGutters>
             
           <a href="/">
@@ -63,6 +63,8 @@ const TopNavBar = () => {
               letterSpacing: ".3rem",
               color: "white",
               textDecoration: "none",
+              border: "none",
+              outline: "none"
             }}
           ></Typography>
 
