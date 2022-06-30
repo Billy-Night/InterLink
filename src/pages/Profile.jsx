@@ -13,42 +13,34 @@ const Profile = () => {
 
     const handleProfClick = () => navigate("/dashboard");
 
+    const handleClickProg = () => navigate("/myprojects");
+
     return (
         <div>
             <TopNavBar />
             <div className='main-container'>
-                <Box
-                    sx={{
-                        display: 'flex',
-                        flexWrap: 'wrap',
-                        '& > :not(style)': {
-                        m: 1,
-                        width: 400,
-                        height: 500,
-                        },
-                    }}
-                    >
-                    <Paper elevation={3} >
-                        <div className="prof-container">
-                            <h1>Profile</h1>
-                            <img src={userData.image} alt=""
-                            display="flex"
-                            textAlign="center" 
-                            />
-                            <p>{userData.first_name} {userData.last_name}</p>
-                            <p>Title: {userData.title}</p>
-                            <p>Site Location: {userData.site_location}</p>
-                            <h3>Technologies:</h3>
-                            <Box>
-                                {/*//! FilterOptions.css chip instead of MUI Chip */}
-                            {userData.technologies.map((tech) => <Chip sx={{m: "2%"}} label={tech} color="primary" />)}
-                            </Box>
-                        </div>
-                            <Button onClick={handleProfClick} variant="contained" color="success">
-                                Projects
-                            </Button>
-                    </Paper>
-                </Box>
+                <div className="prof-container">
+                    <h1>Profile</h1>
+                    <img src={userData.image} alt=""/>
+                    <p>{userData.first_name} {userData.last_name}</p>
+                    <p>Title: {userData.title}</p>
+                    <p>Site Location: {userData.site_location}</p>
+                    <h3>Technologies:</h3>
+                
+                <div className='chip-container'>
+                    <div>
+                    {userData.technologies.map((tech) => <Chip label={tech} color="primary" />)}
+                    </div>
+                </div>
+                <div className='prof-btn'>
+                    <button onClick={handleProfClick}>
+                        Projects
+                    </button>
+                    <button onClick={handleClickProg}>
+                        Matched Projects
+                    </button>
+                </div>
+                </div>
             </div>
         </div>
     );

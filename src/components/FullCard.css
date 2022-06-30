@@ -9,6 +9,7 @@
   /* border: 2px solid #000; */
   border-radius: 0.5rem;
   box-shadow: 24px;
+  height: 80vh;
 }
 .modal-full-card img {
   height: 100px;
@@ -38,6 +39,7 @@
 
 .full-card__main-section {
   width: 80%;
+  height: 30rem;
   margin-inline: auto;
   font-family: 'Montserrat', sans-serif;
   overflow: scroll;

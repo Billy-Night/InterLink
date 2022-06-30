@@ -1,11 +1,17 @@
 // import { useNavigate } from "react-router-dom";
 import TopNavBar from "../components/TopNavBar";
 import { ApsideForm, ApsideInputField } from "../styles/FormStyles";
+import { useNavigate } from "react-router-dom";
 const { Typography, Button, Link } = require("@mui/material");
 const { Box } = require("@mui/system");
 
 const Login = () => {
-  
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/dashboard");
+  };
+
   //! Box = div, Typography = p or h1 etc.
   //! ApsideForm & ApsideInput are from styles folder, styled form & input 
   return (
@@ -77,13 +83,9 @@ const Login = () => {
             <ApsideInputField
               type="password"
               label="Password"
-              // value={context.userData.password}
-              // onChange={(event) => context.handleInput(event, "password")}
               required
             />
-            <Button 
-            // type="submit" 
-            // variant="contained" 
+            <Button onClick={handleClick}
             sx={{ 
               width: "max(150px)",
               fontSize: "20px",

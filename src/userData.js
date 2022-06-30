@@ -8,7 +8,7 @@ const userData = {
   age: 45,
   title: "Web Developer",
   site_location: "Lyon",
-  technologies: ["JavaScript", "React", "MySQL", "Node.js", "Express"],
+  technologies: ["MySQL"],
 };
 
 export default userData;
