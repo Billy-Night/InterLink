@@ -40,6 +40,7 @@ const Profile = () => {
                             <p>Site Location: {userData.site_location}</p>
                             <h3>Technologies:</h3>
                             <Box>
+                                {/*//! FilterOptions.css chip instead of MUI Chip */}
                             {userData.technologies.map((tech) => <Chip sx={{m: "2%"}} label={tech} color="primary" />)}
                             </Box>
                         </div>
