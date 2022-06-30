@@ -30,6 +30,7 @@ const Dashboard = () => {
     <>
       <TopNavBar />
 
+
       <FilterOptions {...{ filterOptions, setFilterOptions }} />
 
       <div id="dashboard__page">
@@ -46,11 +47,31 @@ const Dashboard = () => {
         </header>
 
         <div className="cards-container">
+
+      <FilterOptions />
+    <div id="dashboard__page">
+    
+      <header>
+        <h1 className="project-name">Discovery Collection</h1>
+        <div className="search__field-and-btn">
+          <input
+            placeholder="contain text"
+            type="text"
+            className="search__field"
+          />
+          <button className="search__btn" />
+
+        </div>
+      </div>
+
+    </div>
+
           {filteredData.map((e, index) => {
             return <ProjectCard key={index} {...e} />;
           })}
         </div>
       </div>
+
     </>
   );
 };
