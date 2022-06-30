@@ -8,6 +8,8 @@ import TopNavBar from '../components/TopNavBar';
 const Dashboard = () => {
   return (
     <div id="dashboard__page">
+      <TopNavBar />
+
       <header>
         <h1 className="project-name">Discovery Collection</h1>
         <div className="search__field-and-btn">
