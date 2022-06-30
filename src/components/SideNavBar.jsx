@@ -12,6 +12,9 @@ const SideNavBar = () => {
                 <li>
                     <Link to="/dashboard">Project Dashboard</Link>
                 </li>
+                <li>
+                    <Link to="/">Sign Out</Link>
+                </li>
             </ul>
         </div>
     );

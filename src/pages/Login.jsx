@@ -1,4 +1,5 @@
 // import { useNavigate } from "react-router-dom";
+import TopNavBar from "../components/TopNavBar";
 import { ApsideForm, ApsideInputField } from "../styles/FormStyles";
 const { Typography, Button, Link } = require("@mui/material");
 const { Box } = require("@mui/system");
@@ -8,6 +9,8 @@ const Login = () => {
   //! Box = div, Typography = p or h1 etc.
   //! ApsideForm & ApsideInput are from styles folder, styled form & input 
   return (
+    <>
+    <TopNavBar />
     <Box
       sx={{
         marginTop: "5rem",
@@ -49,6 +52,7 @@ const Login = () => {
             </Link>
           </ApsideForm>
     </Box>
+    </>
   );
 }
 

@@ -1,11 +1,15 @@
 import { Box, Button, Typography } from "@mui/material";
+import TopNavBar from "../components/TopNavBar";
 import { ApsideForm, ApsideInputField } from "../styles/FormStyles";
+
 
 const Register = () => {
 
   //! Box = div, Typography = p or h1 etc.
   //! ApsideForm & ApsideInput are from styles folder, styled form & input  
   return (
+    <>
+    <TopNavBar />
     <Box
       sx={{
         marginTop: "5rem",
@@ -54,6 +58,7 @@ const Register = () => {
         </Button>
       </ApsideForm>
     </Box>
+    </>
   );
 };
 

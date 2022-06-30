@@ -8,7 +8,7 @@ const Dashboard = () => {
     return (
         <div>
             <SideNavBar />
-            <div className='project-container'>
+            <div className='main-container'>
                 {projectData.map((e, index) => {
                 return (
                     <ProjectCard key={index} {...e}/>
