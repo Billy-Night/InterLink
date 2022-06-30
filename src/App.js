@@ -14,7 +14,7 @@ function App() {
       {/* <TopNavBar /> */}
       <Routes>
         <Route path="/" element={<LogReg />} />
-        <Route path="/log" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/dashboard" element={<Dashboard />} />
