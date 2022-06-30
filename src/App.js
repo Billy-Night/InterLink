@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import TopNavBar from "./components/TopNavBar.jsx";
+
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
@@ -10,7 +10,6 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <TopNavBar />
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
