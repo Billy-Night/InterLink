@@ -11,6 +11,8 @@ import { useState } from 'react';
 import DiscoveryFilter from '../components/DiscoveryFilter';
 
 const Dashboard = () => {
+  const [showFilter, setShowFilter] = useState(false);
+
   const [filterOptions, setFilterOptions] = useState({
     technologies: [],
     industries: [],
@@ -29,13 +31,18 @@ const Dashboard = () => {
     return found;
   });
 
+  const handleClick = () => {
+    setShowFilter(!showFilter);
+  }
+
   return (
     <>
       <TopNavBar />
       {/* my filter side navBar */}
       {/* <DiscoveryFilter {...{ filterOptions, setFilterOptions }} /> */}
-
-      <FilterOptions {...{ filterOptions, setFilterOptions }} />
+      <button onClick={(handleClick)} className="filter-icon" />
+      {showFilter ?
+      <FilterOptions {...{ filterOptions, setFilterOptions }} /> : null}
       <div id="dashboard__page">
         <header>
           <h1 className="project-name">Discovery Collection</h1>
