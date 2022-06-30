@@ -1,7 +1,7 @@
 import '../App.css';
 
 import './LogReg.css';
-import '../css/pages/LogReg.css';
+
 import { useNavigate } from 'react-router-dom';
 
 

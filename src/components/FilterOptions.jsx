@@ -30,16 +30,45 @@ const FilterOptions = () => {
                 <li>
                     <p>Industry</p>
                     <button>IT</button>
-                    <button></button>
+                    <button>Hospitality</button>
+                    <button>Automotive</button>
+                    <button>Textile</button>
+                    <button>ECommerce</button>
+                    <button>Food</button>
                 </li>
                 <li>
+                    <p>Location</p>
+                    <button>Paris</button>
+                    <button>Nantes</button>
+                    <button>Montpeller</button>
+                    <button>Casablanca</button>
+                    <button>Munich</button>
+                    <button>Rennes</button>
+                    <button>Lille</button>
+                    <button>Brest</button>
+                    <button>Bruxelles</button>
+                    <button>Aveiro</button>
+                    <button>Dijon</button>
+                    <button>Toulouse</button>
+                </li>
+                <li>
+                    <p>Status</p>
+                    <button>Beginning</button>
+                    <button>Middle</button>
+                    <button>End</button>
+                    <button>Overdue</button>
+                </li>
+                <li>
+                    <p>Team Vacancies</p>
+                    <button>Open</button>
+                    <button>Full</button>
+                </li>
+                <li>
+                    <p>Popularity</p>
+                    <button>Highest</button>
+                    <button>Lowest</button>
                 </li>
             </ul>
-
-            <button>By Locations</button>
-            <button>Availability</button>
-            <button>Industry</button>
-            <button></button>
         </div>
     )
 }
