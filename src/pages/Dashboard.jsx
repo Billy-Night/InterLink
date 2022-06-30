@@ -1,17 +1,16 @@
 import projectData from '../projectData';
 import ProjectCard from '../components/ProjectCard';
 import './Dashboard.css';
-import TopNavBar from './components/TopNavBar';
-
+// import TopNavBar from './components/TopNavBar';
+import FilterOptions from '../components/FilterOptions';
 
 import './Dashboard.css';
-
-// import FilterOptions from '../components/FilterOptions';
 
 const Dashboard = () => {
   return (
     <div id="dashboard__page">
-      <TopNavBar />
+      <FilterOptions />
+      {/* <TopNavBar /> */}
 
       <header>
         <h1 className="project-name">Discovery Collection</h1>
