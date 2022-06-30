@@ -85,7 +85,6 @@
 #LogReg__page > footer {
   min-width: 90%;
   height: 10%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,9 +94,7 @@
 #LogReg__page > footer > .LogReg__btn {
   min-width: 15rem;
   min-height: 5rem;
-
   font-size: 200%;
-
   border-radius: 1rem;
   border: 2px solid #ffffff;
   background-color: #fff;

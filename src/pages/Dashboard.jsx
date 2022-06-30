@@ -1,16 +1,38 @@
-import projectData from '../projectData';
-import ProjectCard from '../components/ProjectCard';
-import './Dashboard.css';
+import projectData from "../projectData";
+import ProjectCard from "../components/ProjectCard";
+import "./Dashboard.css";
 // import { Anchor, Filter } from '@mui/icons-material';
-import './Dashboard.css';
-import TopNavBar from '../components/TopNavBar';
-import FilterOptions from '../components/FilterOptions';
+import "./Dashboard.css";
+import TopNavBar from "../components/TopNavBar";
+import FilterOptions from "../components/FilterOptions";
+import { useState } from "react";
 
 const Dashboard = () => {
+  const [filterOptions, setFilterOptions] = useState({
+    technologies: [],
+    industries: [],
+    locations: [],
+  });
+
+  const filteredData = projectData.filter((project) => {
+    if (filterOptions.technologies.length < 1) return true;
+    let found = false;
+    filterOptions.technologies.forEach((techFilter) => {
+      if(!found && project.technologies.includes(techFilter)) {
+        found = true;
+      }
+    });
+    
+    return found;
+  });
+
   return (
     <>
       <TopNavBar />
-<<<<<<< HEAD
+
+
+      <FilterOptions {...{ filterOptions, setFilterOptions }} />
+
       <div id="dashboard__page">
         <header>
           <h1 className="project-name">Discovery Collection</h1>
@@ -25,10 +47,7 @@ const Dashboard = () => {
         </header>
 
         <div className="cards-container">
-          {projectData.map((e, index) => {
-            return <ProjectCard key={index} {...e} />;
-          })}
-=======
+
       <FilterOptions />
     <div id="dashboard__page">
     
@@ -41,13 +60,18 @@ const Dashboard = () => {
             className="search__field"
           />
           <button className="search__btn" />
->>>>>>> c514a9c5733b90637044a16fc35eea77eb999203
+
         </div>
       </div>
-<<<<<<< HEAD
-=======
+
     </div>
->>>>>>> c514a9c5733b90637044a16fc35eea77eb999203
+
+          {filteredData.map((e, index) => {
+            return <ProjectCard key={index} {...e} />;
+          })}
+        </div>
+      </div>
+
     </>
   );
 };
