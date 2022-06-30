@@ -19,7 +19,7 @@ const LogReg = () => {
           {/* </Link> */}
         
         
-        <button className="LogReg__btn dark" action="">Sign In</button>
+        <button className="LogReg__btn dark" action="">Login</button>
       </footer>
     </div>
   );

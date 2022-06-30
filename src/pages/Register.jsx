@@ -11,17 +11,21 @@ const Register = () => {
     <>
     <TopNavBar />
     <Box
-      sx={{
-        marginTop: "5rem",
-        marginLeft: "10rem",
-        marginRight: "2rem",
-        display: "flex",
-        flexDirection: "column",
-        gap: "2rem",
-        alignItems: "center",
-        justifyContent: "center",
-        marginTop: "2rem",
-      }}
+     sx={{
+      marginTop: "5rem",
+      marginLeft: "10rem",
+      marginRight: "2rem",
+      display: "flex",
+      flexDirection: "column",
+      gap: "2rem",
+      alignItems: "center",
+      justifyContent: "center",
+      marginTop: "2rem",
+      fontFamily: "Hind, sans-serif",
+      lineHeight: "34px",
+      color: "#183650",
+      
+    }}
     >
       <Typography
         variant="h4"
