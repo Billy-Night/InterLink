@@ -1,8 +1,14 @@
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+
+
 
 const FilterOptions = () => {
     
+    const filterOptions = {
+        javascript: false,
+        Sass: false,
+    } 
 
     return (
         <div>
