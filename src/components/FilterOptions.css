@@ -1,22 +1,153 @@
 .list-item {
-    list-style: none;
-    display: inline-block;
+  list-style: none;
+  display: inline-block;
 }
 
 .chip {
-    display: block;
-    font-size: 1.5rem;
-    border: 1px solid;
-    border-color: dimgrey;
-    border-radius: .8em;
-    padding: .2em .4em;
-    margin: .2em .4em;
+  display: block;
+  font-size: 1.5rem;
+  border: 1px solid;
+  border-color: dimgrey;
+  border-radius: 0.8em;
+  padding: 0.2em 0.4em;
+  margin: 0.2em 0.4em;
 }
 
 .chip:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .chip.selected {
-    background-color: azure;
+  background-color: azure;
+}
+
+/* Moran's css starts here 💅 */
+#discovery-filter__Navbar {
+  transition: 1s;
+  height: 100vh;
+  width: 50%;
+  position: absolute;
+  background-color: aquamarine;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.filter__title-and-search {
+  width: 100%;
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-navbar__title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 2.6rem;
+
+  letter-spacing: 0.02em;
+}
+
+.filter__search {
+  height: 2rem;
+  width: 80%;
+
+  background: #ffffff;
+  border: 1rem solid #ffffff;
+  border-radius: 1rem;
+}
+
+.filter__subtitle {
+  width: inherit;
+  font-size: 1.6rem;
+  font-family: Montserrat, sans-serif;
+
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 80%;
+  font-weight: normal;
+}
+
+.filter__tags-container {
+  margin: 0;
+  padding: 0;
+
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  /* background-color: burlywood; */
+}
+
+.list-item.tags {
+  background: #eef2fa;
+  /* border: 0.2rem solid #ffffff; */
+  box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  width: 10rem;
+  text-align: center;
+}
+
+.filter__search-stats {
+  width: 80%;
+  /* background-color: pink; */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.filter__search-stats > button {
+  /* background: #eef2fa; */
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+
+  width: 8rem;
+  height: 10rem;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%;
+  background-color: transparent;
+}
+
+/* single btns properties */
+.parti-btn {
+  background-image: url('../images/parti-btn@2x.png');
+}
+.tech-btn {
+  background-image: url('../images/tech-btn@2x.png');
+}
+.status-btn {
+  background-image: url('../images/status-btn@2x.png');
+}
+.location-btn {
+  background-image: url('../images/location-btn@2x.png');
+}
+.industry-btn {
+  background-image: url('../images/industry-btn@2x.png');
+}
+.pop-btn {
+  background-image: url('../images/populatiry@2x.png');
+}
+
+.filter__btn.dark {
+  min-width: 80%;
+  min-height: 5rem;
+  font-size: 3rem;
+  border-radius: 1rem;
+  border: 2px solid #ffffff;
+  background-color: #fff;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
