@@ -43,7 +43,7 @@ const TopNavBar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{width: "100 vw"}}>
+    <AppBar position="static" sx={{width: "100 vw", backgroundColor: "transparent"}}>
       <Container className="color-navbar" maxWidth="xl" border="none" style={{outline:'none'}} box-shadow="none" color="transparent">
         <Toolbar disableGutters>
             
