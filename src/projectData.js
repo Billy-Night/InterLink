@@ -25,6 +25,7 @@ const projectData = [
     resources: "",
     employeeviews: 10,
     requestaccess: "Unavailable",
+    status: 20,
   },
   {
     id: 2,
@@ -47,6 +48,7 @@ const projectData = [
     resources: "",
     employeeviews: "8",
     requestaccess: "Available",
+    status: 40,
   },
   {
     id: 3,
@@ -68,7 +70,8 @@ const projectData = [
     },
     resources: "",
     employeeviews: 12,
-    requestaccess: "",
+    requestaccess: "Available",
+    status: 80,
   },
   {
     id: 4,
@@ -91,6 +94,7 @@ const projectData = [
     resources: "",
     employeeviews: 101,
     requestaccess: "Available",
+    status: 60,
   },
 ];
 
