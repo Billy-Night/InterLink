@@ -1,7 +1,7 @@
 import projectData from '../projectData';
 import ProjectCard from '../components/ProjectCard';
 import './Dashboard.css';
-import { Anchor, Filter } from '@mui/icons-material';
+// import { Anchor, Filter } from '@mui/icons-material';
 import './Dashboard.css';
 import TopNavBar from '../components/TopNavBar';
 import FilterOptions from '../components/FilterOptions';

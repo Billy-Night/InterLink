@@ -1,4 +1,4 @@
-import FullCard from './FullCard';
+// import FullCard from './FullCard';
 import './ProjectCard.css';
 
 // import { MyContext } from '../context/MyProvider';
