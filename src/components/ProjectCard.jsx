@@ -1,4 +1,5 @@
 // import FullCard from './FullCard';
+import FullCard from './FullCard';
 import './ProjectCard.css';
 
 // import { MyContext } from '../context/MyProvider';
@@ -39,14 +40,13 @@ const ProjectCard = (props) => {
           <footer className="card__footer">
             <div className="footer__avatar"></div>
             <div className="footer__contacts">
-              <h3 className="contact-name">Jane Perez</h3>
+              <h3 className="contact-name">{props.team.Manager}</h3>
               <p className="contact-position">{Object.keys(props.team)[0]}</p>
               <p className="contact-email">{props.contact}</p>
             </div>
           </footer>
         </div>
-        {/*/!Please ignore for now}
-          {/* <div className="expend-card"><FullCard {...props} /></div> */}
+          <div className="expend-card"><FullCard {...props} /></div>
       </main>
     </div>
   );
