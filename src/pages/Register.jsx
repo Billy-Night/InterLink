@@ -1,5 +1,6 @@
 
 import { Box, Button, Typography } from "@mui/material";
+import { fontFamily } from "@mui/system";
 import TopNavBar from "../components/TopNavBar";
 import { ApsideForm, ApsideInputField } from "../styles/FormStyles"
 
@@ -30,11 +31,28 @@ const Register = () => {
     }}
     >
       <Typography
-        variant="h4"
-        component="h1"
-        color="var(--main-color)"
+          color="#e79759"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          marginTop="3%"
+          fontFamily= "Hind, sans-serif"
+          fontWeight="700"
+          fontSize= "34px"
+          lineHeight= "34px"    
       >
-        Registration
+        Welcome to the <span 
+        
+        style={{
+          color:"#183650",
+          fontWeight:"900",
+          display:"flex",
+          alignItems:"center",
+          justifyContent:"center",
+          fontSize:"1.5em",
+          marginInline:".5em",
+          fontFamily: "Montserrat, sans-serif"
+          }}>{" "}APSIDE {" "}</span>collective
       </Typography>
       <ApsideForm>
         <ApsideInputField
@@ -65,7 +83,25 @@ const Register = () => {
           // onChange={(event) => context.handleInput(event, "password")}
           required
         />
-        <Button type="submit" variant="contained" sx={{ width: "max(100px)" }}>
+        <Button 
+                    sx={{ 
+                      width: "max(150px)",
+                      fontSize: "20px",
+                      minWidth: "15rem",
+                      fontColor: "#183650",
+                      fontFamily: "Montserrat",
+                      fontWeight: "500",
+                      color: "#183650",
+                      minHeight: "5rem",
+                      fontSize: "150%",
+                      borderRadius: "1rem",
+                      border: "2px solid #ffffff",
+                      backgroundColor: "#fff",
+                      filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))"
+                    }}>
+        
+        
+        {/* type="submit" variant="contained" sx={{ width: "max(100px)" }}> */}
           Register
         </Button>
       </ApsideForm>

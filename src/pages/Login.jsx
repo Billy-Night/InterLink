@@ -50,11 +50,10 @@ const Login = () => {
             
             fontFamily= "Montserrat, sans-serif"
             fontSize="47px"
-            fontWeight="700"
+            fontWeight="900"
             lineHeight="34px"
             // eslint-disable-next-line react/jsx-no-duplicate-props
             color="#183650"
-            fontWeight="bold"
             wrap="nowrap"
 
             marginBottom="3%"
