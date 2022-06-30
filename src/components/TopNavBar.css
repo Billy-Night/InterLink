@@ -6,6 +6,10 @@
 
 .color-navbar {
     background-color: white;
+    outline: white;
+    border: white;
+    box-shadow: white;
+    border-bottom: 0;
 }
 
 .text-navbar {

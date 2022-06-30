@@ -1,15 +1,18 @@
 import projectData from '../projectData';
 import ProjectCard from '../components/ProjectCard';
 import './Dashboard.css';
-import { Anchor } from '@mui/icons-material';
+import { Anchor, Filter } from '@mui/icons-material';
 import './Dashboard.css';
 import TopNavBar from '../components/TopNavBar';
+import FilterOptions from '../components/FilterOptions';
 
 const Dashboard = () => {
   return (
-    <div id="dashboard__page">
+    <>
       <TopNavBar />
-
+      <FilterOptions />
+    <div id="dashboard__page">
+    
       <header>
         <h1 className="project-name">Discovery Collection</h1>
         <div className="search__field-and-btn">
@@ -28,6 +31,7 @@ const Dashboard = () => {
         })}
       </div>
     </div>
+    </>
   );
 };
 
