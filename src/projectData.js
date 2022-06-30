@@ -18,7 +18,7 @@ const projectData = [
       Manager: "Tom Cruise",
       ScrumMaster: "Jane Doe",
       TechLead: "Mark zuckerberg",
-      WebDeveloper: "Elon Musk",
+      WebDeveloper: "",
       JuniorDeveloper: "Bill Gates",
       DevOps: "Steve Carrell",
     },
