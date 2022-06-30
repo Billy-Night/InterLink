@@ -29,6 +29,7 @@ const FilterOptions = (props) => {
   };
   return (
     <div id="discovery-filter__Navbar">
+      <button className="filter-icon" />
       <header className="filter__title-and-search">
         <p className="filter__title">Discovery Filter</p>
         <input

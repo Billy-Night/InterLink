@@ -20,7 +20,7 @@ const DiscoveryFilter = (props) => {
   return (
     <div id="discovery-filter__Navbar" style={{ width: divWidth }}>
       <FilterOptions {...{ filterOptions, setFilterOptions }} />
-      <button className="filter-icon" onClick={openNavBar}></button>
+      <button className="filter-icon" />
       <header>
         <h1 className="filter__title">Discovery Filter</h1>
         <input
