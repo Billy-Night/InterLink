@@ -128,7 +128,7 @@ const projectData = [
     status: 50,
   },
   {
-    id: 5,
+    id: 6,
     name: "Netbeast",
     image: netbeast,
     location: "Munich",
