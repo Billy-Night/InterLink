@@ -1,14 +1,12 @@
+import { useState } from 'react';
 import projectData from '../projectData';
 import ProjectCard from '../components/ProjectCard';
 import './Dashboard.css';
-// import { Anchor, Filter } from '@mui/icons-material';
-
 import TopNavBar from '../components/TopNavBar';
 import FilterOptions from '../components/FilterOptions';
-// My filter side bar
+import filterImg from '../images/adjusting.png';
 
-import { useState } from 'react';
-import DiscoveryFilter from '../components/DiscoveryFilter';
+// import DiscoveryFilter from '../components/DiscoveryFilter';
 
 const Dashboard = () => {
   const [showFilter, setShowFilter] = useState(false);
@@ -38,9 +36,7 @@ const Dashboard = () => {
   return (
     <>
       <TopNavBar />
-      {/* my filter side navBar */}
-      {/* <DiscoveryFilter {...{ filterOptions, setFilterOptions }} /> */}
-      <button onClick={(handleClick)} className="filter-icon" />
+      <img id="filter-img" src={filterImg} alt="filter" onClick={(handleClick)} className="filter-icon" />
       {showFilter ?
       <FilterOptions {...{ filterOptions, setFilterOptions }} /> : null}
       <div id="dashboard__page">
