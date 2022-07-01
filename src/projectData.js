@@ -5,6 +5,7 @@ import RevergImg from "./images/Reverg.png";
 import SharkbiteImg from "./images/Sharkbite.png";
 import instacart from "./images/instacart.png";
 import netbeast from "./images/netbeast.png";
+import travelica from "./images/travelica.png";
 
 const projectData = [
   {
@@ -35,7 +36,7 @@ const projectData = [
     id: 2,
     name: "Foodguider",
     image: FoodguiderImg,
-    location: "Berlin",
+    location: "Munich",
     type: "Web Application",
     description:
       "An app helping you to find the best food places near your location",
@@ -133,8 +134,7 @@ const projectData = [
     image: netbeast,
     location: "Munich",
     type: "ECommerce",
-    description:
-      "The Smart Home connector",
+    description: "The Smart Home connector",
     industry: "ECommerce",
     technologies: ["Node.js", "React", "MongoDB", "Bootstrap", "NGINX"],
     team: {
@@ -174,6 +174,30 @@ const projectData = [
     employeeviews: 141,
     requestaccess: "Available",
     status: 80,
+  },
+  {
+    id: 10,
+    name: "Travelica",
+    image: travelica,
+    location: "Casablanca",
+    type: "Web Application",
+    description:
+      "Discover the world with us! Wherever you want to go, we will go with you, making sure to provide an unforgettable experience tailored to you expectations.",
+    industry: "Travel",
+    technologies: ["Angular", "C++", "Java", "Sass"],
+    team: {
+      Manager: "Indiana Jones",
+      ScrumMaster: "Conan the Barbarian",
+      TechLead: "Lara Croft",
+      WebDeveloper: "David Bowie",
+      JuniorDeveloper: "Amber Heard",
+      DevOps: "Johnny Depp",
+    },
+    contact: "traveltheworld.com",
+    resources: "",
+    employeeviews: 22,
+    requestaccess: "Available",
+    status: 60,
   },
 ];
 
