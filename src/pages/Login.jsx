@@ -55,7 +55,6 @@ const Login = () => {
             // eslint-disable-next-line react/jsx-no-duplicate-props
             color="#183650"
             wrap="nowrap"
-
             marginBottom="3%"
             display="inline-block"
           
