@@ -28,7 +28,8 @@
   height: 100vh;
   width: 50%;
   position: absolute;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  background-color: #e9e5ed;
   z-index: 1;
 
   display: flex;
