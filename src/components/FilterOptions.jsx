@@ -23,7 +23,7 @@ const FilterOptions = (props) => {
       'ECommerce',
       'Food',
     ],
-    locations: ['Paris', 'Nantes', 'Montpeller', 'Munich', 'Brest', 'Toulouse'],
+    locations: ['Paris', 'Nantes', 'Casablanca', 'Montpellier', 'Munich', 'Brest', 'Toulouse'],
     status: ['Beginning', 'Middle', 'End', 'Overdue'],
     teamvacancies: ['Open', 'Full'],
   };
