@@ -2,6 +2,7 @@ import AutoScriptImg from "./images/AutoScript.png";
 import FoodguiderImg from "./images/Foodguider.png";
 import HoteliqImg from "./images/Hoteliq.png";
 import RevergImg from "./images/Reverg.png";
+import SharkbiteImg from "./images/Sharkbite.png";
 import instacart from "./images/instacart.png";
 import netbeast from "./images/netbeast.png";
 
@@ -149,6 +150,30 @@ const projectData = [
     employeeviews: 200,
     requestaccess: "unavailable",
     status: 50,
+  },
+  {
+    id: 7,
+    name: "Sharkbite",
+    image: SharkbiteImg,
+    location: "St Dizier",
+    type: "Start-up",
+    description:
+      "Small scale communal fishing aided by online software and data. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    industry: "Agricultural",
+    technologies: ["React", "JavaScript", "Node.js", "MySQL"],
+    team: {
+      Manager: "Gandalf (the White)",
+      ScrumMaster: "Aragon",
+      TechLead: "Legolas",
+      WebDeveloper: "Shelob",
+      JuniorDeveloper: "Frodo Bagins",
+      DevOps: "Sauron",
+    },
+    contact: "sharkbiteadmin@mail.com",
+    resources: "",
+    employeeviews: 141,
+    requestaccess: "Available",
+    status: 80,
   },
 ];
 
