@@ -1,0 +1,92 @@
+#reg__page {
+  /* background-color: #fff; */
+  font-size: 3rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.reg__title {
+  color: #e79759;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1;
+  margin-top: 3rem;
+
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  margin-inline: auto;
+  font-weight: 600;
+  align-items: center;
+  /* color: rgb(231, 151, 89); */
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  width: 70vw;
+
+  /* background-color: blue; */
+}
+
+.reg__title > .orange1 {
+  font-size: 5rem;
+  line-height: 1;
+}
+.reg__title > .blue1 {
+  font-size: 5rem;
+  margin: 0px 0px 3%;
+  letter-spacing: 0.00938em;
+  color: rgb(24, 54, 80);
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  display: inline-block;
+}
+
+.reg__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin: 0;
+}
+
+.reg__form > input {
+  display: flex;
+  flex-direction: column;
+  margin-block: 0.5rem;
+
+  min-width: 40rem;
+  height: 4rem;
+
+  border-radius: 1rem;
+  border: solid 1px #e79759;
+  letter-spacing: inherit;
+  color: currentcolor;
+
+  background: none;
+
+  margin: 1rem;
+}
+
+.reg__form > input::placeholder {
+  padding-inline-start: 1rem;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.poweredBy {
+  color: #183650;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  margin-top: -3rem;
+  font-style: italic;
+  font-family: Montserrat, sans-serif;
+}
