@@ -2,8 +2,8 @@ import profile from "./images/profile.png";
 
 const userData = {
   id: 1,
-  first_name: "Charlie",
-  last_name: "Harson",
+  first_name: "Jamie",
+  last_name: "Nicoles",
   image: profile,
   age: 45,
   title: "Web Developer",
