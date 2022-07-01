@@ -1,25 +1,30 @@
 // import { useNavigate } from "react-router-dom";
 import TopNavBar from "../components/TopNavBar";
 import { ApsideForm, ApsideInputField } from "../styles/FormStyles";
+import { useNavigate } from "react-router-dom";
 const { Typography, Button, Link } = require("@mui/material");
 const { Box } = require("@mui/system");
 
 const Login = () => {
-  
-  //! Box = div, Typography = p or h1 etc.
-  //! ApsideForm & ApsideInput are from styles folder, styled form & input 
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/dashboard");
+  };
+
   return (
     <>
     <TopNavBar />
     <Box
          sx={{
           marginTop: "5rem",
-          marginLeft: "10rem",
+          marginLeft: "2rem",
           marginRight: "2rem",
           display: "flex",
           flexDirection: "column",
           gap: "2rem",
           marginTop: "2rem",
+          marginBottom: "2rem",
           alignItems: "center",
           justifyContent: "center",
           fontFamily: "Hind, sans-serif",
@@ -39,54 +44,37 @@ const Login = () => {
             fontWeight="700"
             fontSize= "34px"
             lineHeight= "34px"
-            
-       
-            >
+          >
            WELCOME BACK 
           </Typography>
           <Typography
-
             color="var(--main-color)"
-            
             fontFamily= "Montserrat, sans-serif"
-            fontSize="47px"
+            fontSize={{xs: "18px", md:"32px", lg: "47px"}}
             fontWeight="900"
             lineHeight="34px"
-            // eslint-disable-next-line react/jsx-no-duplicate-props
-            color="#183650"
             wrap="nowrap"
             marginBottom="3%"
             display="inline-block"
-          
           > 
-          
           You have a lot of projects to discover</Typography>
-          <ApsideForm
-       
-          >
 
+          <ApsideForm>
             <ApsideInputField
-          
               type="email"
               label="Email"
-              // value={context.userData.email}
-              // onChange={(event) => context.handleInput(event, "email")}
               required
             />
             <ApsideInputField
               type="password"
               label="Password"
-              // value={context.userData.password}
-              // onChange={(event) => context.handleInput(event, "password")}
               required
             />
-            <Button 
-            // type="submit" 
-            // variant="contained" 
+            <Button onClick={handleClick}
             sx={{ 
               width: "max(150px)",
               fontSize: "20px",
-              minWidth: "15rem",
+              minWidth: "5rem",
               fontColor: "#183650",
               fontFamily: "Montserrat",
               fontWeight: "400",

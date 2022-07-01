@@ -1,13 +1,16 @@
+import { useState } from 'react';
 import projectData from '../projectData';
 import ProjectCard from '../components/ProjectCard';
 import './Dashboard.css';
-// import { Anchor, Filter } from '@mui/icons-material';
-
 import TopNavBar from '../components/TopNavBar';
 import FilterOptions from '../components/FilterOptions';
-import { useState } from 'react';
+import filterImg from '../images/adjusting.png';
+
+// import DiscoveryFilter from '../components/DiscoveryFilter';
 
 const Dashboard = () => {
+  const [showFilter, setShowFilter] = useState(false);
+
   const [filterOptions, setFilterOptions] = useState({
     technologies: [],
     industries: [],
@@ -26,10 +29,16 @@ const Dashboard = () => {
     return found;
   });
 
+  const handleClick = () => {
+    setShowFilter(!showFilter);
+  }
+
   return (
     <>
       <TopNavBar />
-      <FilterOptions {...{ filterOptions, setFilterOptions }} />
+      <img id="filter-img" src={filterImg} alt="filter" onClick={(handleClick)} className="filter-icon" />
+      {showFilter ?
+      <FilterOptions {...{ filterOptions, setFilterOptions }} /> : null}
       <div id="dashboard__page">
         <header>
           <h1 className="project-name">Discovery Collection</h1>

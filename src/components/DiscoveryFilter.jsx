@@ -1,11 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './DiscoveryFilter.css';
+import FilterOptions from './FilterOptions';
 
-const DiscoveryFilter = () => {
+const DiscoveryFilter = (props) => {
+  const { filterOptions, setFilterOptions } = props;
+  const [navStatus, setNavStatus] = useState(0);
+  const [divWidth, setDivWidth] = useState('');
+
+  const openNavBar = () => {
+    if (navStatus === 0) {
+      setDivWidth('30vw');
+      setNavStatus(1);
+    } else {
+      setDivWidth('0px');
+      setNavStatus(0);
+    }
+  };
+
   return (
-    <div id="discovery-filter__page">
+    <div id="discovery-filter__Navbar" style={{ width: divWidth }}>
+      <FilterOptions {...{ filterOptions, setFilterOptions }} />
+      <button className="filter-icon" />
       <header>
-        <h1>Discovery Filter</h1>
-        <input type="text" placeholder="contain text" />
+        <h1 className="filter__title">Discovery Filter</h1>
+        <input
+          className="filter__text-field"
+          type="text"
+          placeholder="contain text"
+        />
       </header>
       <main>
         <section className="discovery__search-tags">
