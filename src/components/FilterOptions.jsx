@@ -38,7 +38,7 @@ const FilterOptions = (props) => {
           placeholder="contain text"
         />
       </header>
-      <p className="filter__subtitle">Technologies</p>
+      {/* <p className="filter__subtitle">Technologies</p> */}
       <ul className="filter__tags-container">
         {availableFilters.technologies.map((tech, index) => {
           return (

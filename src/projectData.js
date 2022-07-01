@@ -5,6 +5,8 @@ import RevergImg from "./images/Reverg.png";
 import SharkbiteImg from "./images/Sharkbite.png";
 import instacart from "./images/instacart.png";
 import netbeast from "./images/netbeast.png";
+import BugermogulImg from "./images/Burgermogul.png";
+import PlanelyImg from "./images/Planely.png";
 import travelica from "./images/travelica.png";
 
 const projectData = [
@@ -174,6 +176,54 @@ const projectData = [
     employeeviews: 141,
     requestaccess: "Available",
     status: 80,
+  },
+  {
+    id: 8,
+    name: "Burgermogul",
+    image: BugermogulImg,
+    location: "New York",
+    type: "Chain",
+    description:
+      "Mid-level fastfood chain. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    industry: "Entertainment",
+    technologies: ["React", "JavaScript", "Node.js", "MySQL", "Java"],
+    team: {
+      Manager: "Bob Becher",
+      ScrumMaster: "Linda Belcher",
+      TechLead: "Tina Belcher",
+      WebDeveloper: "Gene Belcher",
+      JuniorDeveloper: "Louise Belcher",
+      DevOps: "",
+    },
+    contact: "bobsbugers@mail.com",
+    resources: "",
+    employeeviews: 33,
+    requestaccess: "Available",
+    status: 90,
+  },
+  {
+    id: 9,
+    name: "Planely",
+    image: PlanelyImg,
+    location: "Dublin",
+    type: "Airline",
+    description:
+      "Budget airline operating in western Europe. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    industry: "Entertainment",
+    technologies: ["React", "JavaScript", "Node.js", "MySQL"],
+    team: {
+      Manager: "Maverick",
+      ScrumMaster: "Goose",
+      TechLead: "Charlie",
+      WebDeveloper: "Viper",
+      JuniorDeveloper: "Iceman",
+      DevOps: "Merlin",
+    },
+    contact: "topgun@mail.com",
+    resources: "",
+    employeeviews: 38,
+    requestaccess: "Available",
+    status: 50,
   },
   {
     id: 10,
