@@ -66,8 +66,8 @@ const FullCard = (props) => {
               </div>
             </div>
             <div className="full-card__tags">
-              {props.technologies.map((tech) => (
-                <Chip
+              {props.technologies.map((tech, index) => (
+                <Chip key={index}
                   className="full-card__single-tag"
                   sx={{ mr: '10px' }}
                   label={tech}

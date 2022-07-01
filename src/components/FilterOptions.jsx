@@ -25,11 +25,11 @@ const FilterOptions = (props) => {
     ],
     locations: ['Paris', 'Nantes', 'Montpeller', 'Munich', 'Brest', 'Toulouse'],
     status: ['Beginning', 'Middle', 'End', 'Overdue'],
-    teamvacancies: ['Open', 'Full', ''],
+    teamvacancies: ['Open', 'Full'],
   };
   return (
     <div id="discovery-filter__Navbar">
-      <button className="filter-icon" />
+      {/* <button className="filter-icon" /> */}
       <header className="filter__title-and-search">
         <p className="filter__title">Discovery Filter</p>
         <input
@@ -38,11 +38,11 @@ const FilterOptions = (props) => {
           placeholder="contain text"
         />
       </header>
-      <p className="filter__subtitle">Technologies</p>
+      {/* <p className="filter__subtitle">Technologies</p> */}
       <ul className="filter__tags-container">
-        {availableFilters.technologies.map((tech) => {
+        {availableFilters.technologies.map((tech, index) => {
           return (
-            <li className="list-item tags">
+            <li key={index} className="list-item tags">
               <span
                 onClick={() => {
                   setFilterOptions({
