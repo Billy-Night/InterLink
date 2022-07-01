@@ -71,9 +71,9 @@ const TopNavBar = () => {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting.label} onClick={handleCloseUserMenu}>
-                  <Link className="top-navbar-menu-item" to={setting.link}>
+                  <a className="top-navbar-menu-item" href={setting.link}>
                     {setting.label}
-                  </Link>
+                  </a>
                 </MenuItem>
               ))}
             </Menu>
