@@ -2,15 +2,14 @@ import '../App.css';
 import './LogReg.css';
 import { useNavigate } from 'react-router-dom';
 
-
 const LogReg = () => {
   const navigate = useNavigate();
   const handleClickLogIn = () => {
-    navigate("/login");
-  }
+    navigate('/login');
+  };
   const handleClickReg = () => {
-    navigate("/register")
-  }
+    navigate('/register');
+  };
 
   return (
     <div id="LogReg__page">
@@ -18,17 +17,17 @@ const LogReg = () => {
         <div className="LogReg__hero-img"></div>
       </header>
 
-        <span className="LogReg__title"
-        >Discover your dream project</span>
-      
+      <main className="LogReg__title">
+        <span className="LogReg__title-orange">Discover your</span>
+        <span className="LogReg__title-blue">dream project</span>
+      </main>
+
       <footer>
-        <button 
-        onClick={handleClickReg} className="LogReg__btn bright">
+        <button onClick={handleClickReg} className="LogReg__btn bright">
           REGISTER
         </button>
 
-        <button 
-        onClick={handleClickLogIn} className="LogReg__btn dark">
+        <button onClick={handleClickLogIn} className="LogReg__btn dark">
           LOGIN
         </button>
       </footer>
