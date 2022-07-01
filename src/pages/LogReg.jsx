@@ -55,6 +55,7 @@ const LogReg = () => {
           LOGIN
         </button>
       </footer>
+      <p className="poweredBy">Powered by InterLink</p>
     </div>
   );
 };
