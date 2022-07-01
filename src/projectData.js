@@ -2,6 +2,8 @@ import AutoScriptImg from "./images/AutoScript.png";
 import FoodguiderImg from "./images/Foodguider.png";
 import HoteliqImg from "./images/Hoteliq.png";
 import RevergImg from "./images/Reverg.png";
+import instacart from "./images/instacart.png";
+import netbeast from "./images/netbeast.png";
 
 const projectData = [
   {
@@ -99,6 +101,54 @@ const projectData = [
     employeeviews: 101,
     requestaccess: "Available",
     status: 60,
+  },
+  {
+    id: 5,
+    name: "Instacart",
+    image: instacart,
+    location: "Montpeller",
+    type: "Online store",
+    description:
+      "Groceries and home essentials delivered from local stores in 1 hour",
+    industry: "Food",
+    technologies: ["Python", "Ruby", "Rails", "Firebase", "PostSQL"],
+    team: {
+      Manager: "Jamie Oliver",
+      ScrumMaster: "Bob Ross",
+      TechLead: "Jonathan Brown",
+      WebDeveloper: "Anais Dufour",
+      JuniorDeveloper: "Kelly Smith",
+      DevOps: "Sebastian Haller",
+    },
+    contact: "instacart@mail.com",
+    resources: "",
+    employeeviews: 200,
+    requestaccess: "unavailable",
+    status: 50,
+  },
+  {
+    id: 5,
+    name: "Netbeast",
+    image: netbeast,
+    location: "Munich",
+    type: "ECommerce",
+    description:
+      "The Smart Home connector",
+    industry: "ECommerce",
+    technologies: ["Node.js", "React", "MongoDB", "Bootstrap", "NGINX"],
+    team: {
+      Manager: "Ryan Oslo",
+      ScrumMaster: "Bob Ross",
+      TechLead: "Jonathan Brown",
+      WebDeveloper: "Anais Dufour",
+      JuniorDeveloper: "Kelly Smith",
+      DevOps: "Sebastian Haller",
+    },
+    contact: "instacart@mail.com",
+    resources: "",
+    employeeviews: 200,
+    requestaccess: "unavailable",
+    status: 50,
   },
 ];
 
