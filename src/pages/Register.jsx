@@ -109,7 +109,7 @@ const Register = () => {
         
         
         {/* type="submit" variant="contained" sx={{ width: "max(100px)" }}> */}
-          Register
+          Confirm
         </Button>
       </ApsideForm>
     </Box>
