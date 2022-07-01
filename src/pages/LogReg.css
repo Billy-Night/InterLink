@@ -50,9 +50,22 @@
     min-width: 100%;
     height: 100%;
     background-image: url('../../public/logo-apside-bleu.svg');
-    background-size: 50vw;
+    background-size: 130vw;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .LogReg__title-blue {
+    margin: 3%;
+    letter-spacing: 0.00938em;
+    color: rgb(24, 54, 80);
+    font-family: Montserrat, sans-serif;
+    /* font-size: 47px; */
+    font-weight: 900;
+    line-height: 1;
+    display: inline-block;
+    margin-bottom: 3%;
+    padding-bottom: 3%;
   }
 }
 
@@ -100,6 +113,7 @@
   /* font-size: 47px; */
   font-weight: 900;
   line-height: 1;
+  margin-bottom: 5px;
   display: inline-block;
 }
 

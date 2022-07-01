@@ -1,11 +1,10 @@
-import { useState } from 'react';
-import projectData from '../projectData';
-import ProjectCard from '../components/ProjectCard';
-import './Dashboard.css';
-import TopNavBar from '../components/TopNavBar';
-import FilterOptions from '../components/FilterOptions';
-import filterImg from '../images/adjusting.png';
-
+import { useState } from "react";
+import projectData from "../projectData";
+import ProjectCard from "../components/ProjectCard";
+import "./Dashboard.css";
+import TopNavBar from "../components/TopNavBar";
+import FilterOptions from "../components/FilterOptions";
+import filterImg from "../images/adjusting.png";
 // import DiscoveryFilter from '../components/DiscoveryFilter';
 
 const Dashboard = () => {
@@ -15,30 +14,97 @@ const Dashboard = () => {
     technologies: [],
     industries: [],
     locations: [],
+    status: []
   });
 
+  const filterToProject = {
+    technologies: "technologies",
+    industries: "industry",
+    locations: "location",
+    status: "status"
+  }
+
+  // Filter each project (only display projects that match ALL selected criteria)
   const filteredData = projectData.filter((project) => {
-    if (filterOptions.technologies.length < 1) return true;
-    let found = false;
-    filterOptions.technologies.forEach((techFilter) => {
-      if (!found && project.technologies.includes(techFilter)) {
-        found = true;
+    var currentFilter;
+
+    // Check wether criteria are selected
+    var filterActive = false;
+    Object.keys(filterToProject).forEach((filterOption) => {
+      currentFilter = filterOptions[filterOption];
+      if (
+        !filterActive &&
+        currentFilter !== undefined &&
+        !(Array.isArray(currentFilter) && currentFilter.length < 1)
+      ) {
+        filterActive = true;
+      }
+    });
+    if(!filterActive) return true;
+
+    // go through all criteria and if any of those does not match reject project
+    var keep = true;
+    var projectKey;
+
+    Object.keys(filterToProject).forEach((filterOption) => {
+      currentFilter = filterOptions[filterOption];
+      if (keep && currentFilter !== undefined) {
+        projectKey = filterToProject[filterOption];
+        if (projectKey === undefined || project[projectKey] === undefined)
+          return;
+        // case one
+        if (
+          Array.isArray(currentFilter) &&
+          Array.isArray(project[projectKey])
+        ) {
+          currentFilter.forEach((filter) => {
+            if (keep) keep = project[projectKey].includes(filter);
+          });
+          return;
+        }
+        // case two
+        if (
+          !Array.isArray(currentFilter) &&
+          Array.isArray(project[projectKey])
+        ) {
+          if (keep) keep = project[projectKey].includes(currentFilter);
+          return;
+        }
+        // case three
+        if (
+          Array.isArray(currentFilter) &&
+          !Array.isArray(project[projectKey])
+        ) {
+          currentFilter.forEach((filter) => {
+            if (keep) keep = project[projectKey] === filter;
+          });
+          return;
+        }
+        // case four
+        if (project[projectKey] !== currentFilter) keep = false;
       }
     });
 
-    return found;
+    return keep;
   });
 
   const handleClick = () => {
     setShowFilter(!showFilter);
-  }
+  };
 
   return (
     <>
       <TopNavBar />
-      <img id="filter-img" src={filterImg} alt="filter" onClick={(handleClick)} className="filter-icon" />
-      {showFilter ?
-      <FilterOptions {...{ filterOptions, setFilterOptions }} /> : null}
+      <img
+        id="filter-img"
+        src={filterImg}
+        alt="filter"
+        onClick={handleClick}
+        className="filter-icon"
+      />
+      {showFilter ? (
+        <FilterOptions {...{ filterOptions, setFilterOptions }} />
+      ) : null}
       <div id="dashboard__page">
         <header>
           <h1 className="project-name">Discovery Collection</h1>
