@@ -1,10 +1,7 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-
 import userData from "../userData";
 import './Profile.css';
-import { Button, Chip } from '@mui/material';
+import { Chip } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import TopNavBar from '../components/TopNavBar';
 

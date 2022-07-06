@@ -1,7 +1,5 @@
-import { Box, Button, Typography } from '@mui/material';
-import { fontFamily } from '@mui/system';
+import { Button } from '@mui/material';
 import TopNavBar from '../components/TopNavBar';
-import { ApsideForm, ApsideInputField } from '../styles/FormStyles';
 import { useNavigate } from 'react-router-dom';
 import './Register.css';
 
@@ -68,7 +66,6 @@ const Register = () => {
               color: '#183650',
               mt: '3rem',
               minHeight: '5rem',
-              fontSize: '150%',
               borderRadius: '1rem',
               border: '2px solid #ffffff',
               backgroundColor: '#fff',
