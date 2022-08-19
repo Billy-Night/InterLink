@@ -88,7 +88,7 @@ const Dashboard = () => {
     return keep;
   });
 
-  const handleClick = () => {
+  const handleFilterDisplay = () => {
     setShowFilter(!showFilter);
   };
 
@@ -99,11 +99,11 @@ const Dashboard = () => {
         id="filter-img"
         src={filterImg}
         alt="filter"
-        onClick={handleClick}
+        onClick={handleFilterDisplay}
         className="filter-icon"
       />
       {showFilter ? (
-        <FilterOptions {...{ filterOptions, setFilterOptions }} />
+        <FilterOptions {...{ filterOptions, setFilterOptions }} handleFilterDisplay={handleFilterDisplay}  />
       ) : null}
       <div id="dashboard__page">
         <header>

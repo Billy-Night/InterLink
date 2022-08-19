@@ -27,6 +27,8 @@ const FilterOptions = (props) => {
     status: ['Beginning', 'Middle', 'End', 'Overdue'],
     teamvacancies: ['Open', 'Full'],
   };
+
+
   return (
     <div id="discovery-filter__Navbar">
       {/* <button className="filter-icon" /> */}
@@ -70,7 +72,7 @@ const FilterOptions = (props) => {
         <button className="industry-btn" />
         <button className="pop-btn" />
       </section>
-      <button className="filter__btn dark">Apply Filter</button>
+      <button onClick={props.handleFilterDisplay} className="filter__btn dark">Apply Filter</button>
     </div>
   );
 };
