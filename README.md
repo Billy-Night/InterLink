@@ -1,9 +1,13 @@
 # InterLink
 
-![alt text](https://github.com/Billy-Night/InterLink/blob/main/src/images/logo-apside.png)
+<p align="center">
+  ![alt text](https://github.com/Billy-Night/InterLink/blob/main/src/images/logo-apside.png)
+</p>
 
-The all in one application that will solve AppSides project and resource management needs.
-
+<p>
+ *The all in one application that will solve AppSides project and resource management needs.*
+</p>
+  
 <p align="center">
   <a href="https://interlink.netlify.app/">Demo </a> . 
   <a href="https://github.com/Billy-Night/InterLink/issues">Report Bug </a>
