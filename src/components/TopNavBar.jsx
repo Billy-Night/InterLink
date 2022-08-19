@@ -12,7 +12,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import logo from "../images/logo-apside.png";
 import "./TopNavBar.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 // const pages = ['Products', 'Pricing', 'Blog'];
@@ -71,7 +71,9 @@ const TopNavBar = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              <a className="top-navbar-menu-item" href="/profile" > Profile</a>
+            <>
+              <Link className="top-navbar-menu-item" to="/profile" > Profile</Link>
+            </>
               {settings.map((setting) => (
                 <MenuItem key={setting.label} onClick={handleCloseUserMenu}>
                   <a className="top-navbar-menu-item" href={setting.link}>
