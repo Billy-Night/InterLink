@@ -4,9 +4,11 @@
 
 The all in one application that will solve AppSides project and resource management needs.
 
-<a align="center" href="https://interlink.netlify.app/">Demo</a>
+<p align="center">
+  <a href="https://interlink.netlify.app/">Demo</a> . 
+  <a href="https://github.com/Billy-Night/InterLink/issues">Report A Bug</a>
+</p>
 
-[Demo](https://interlink.netlify.app/) [Report a Bug](https://github.com/Billy-Night/InterLink/issues) Contribute
 
 ## Introduction 
 
