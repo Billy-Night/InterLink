@@ -1,9 +1,12 @@
 // import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 import TopNavBar from "../components/TopNavBar";
 import { ApsideForm, ApsideInputField } from "../styles/FormStyles";
 import { useNavigate } from "react-router-dom";
-const { Typography, Button, Link } = require("@mui/material");
+const { Typography, Button } = require("@mui/material");
 const { Box } = require("@mui/system");
+
 
 const Login = () => {
   const navigate = useNavigate();
@@ -17,7 +20,7 @@ const Login = () => {
     <TopNavBar />
     <Box
          sx={{
-          marginTop: "5rem",
+          // marginTop: "5rem",
           marginLeft: "2rem",
           marginRight: "2rem",
           display: "flex",
@@ -40,7 +43,7 @@ const Login = () => {
             marginTop="3%"
             fontFamily= "Hind, sans-serif"
             fontWeight="700"
-            fontSize= "34px"
+            // fontSize= "34px"
             lineHeight= "34px"
           >
            WELCOME BACK 
@@ -78,22 +81,24 @@ const Login = () => {
               fontWeight: "400",
               color: "#183650",
               minHeight: "5rem",
+              // fontSize: "150%",
               borderRadius: "1rem",
               border: "2px solid #ffffff",
               backgroundColor: "#fff",
               filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))"
             }}>
-
               Login
             </Button>
-            <Link
+            
+          </ApsideForm>
+          <>
+            <Link to="/register"
               color="var(--main-color)"
-              href="/register"
               underline="hover"
             >
               Register a new account
             </Link>
-          </ApsideForm>
+            </>
     </Box>
     </>
   );

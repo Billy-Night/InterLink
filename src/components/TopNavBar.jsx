@@ -16,11 +16,12 @@ import { Link } from "react-router-dom";
 
 
 // const pages = ['Products', 'Pricing', 'Blog'];
-const settings = [
-  { label: "Profile", link: "/profile" },
-  { label: "Dashboard", link: "/dashboard" },
-  { label: "Logout", link: "/" },
-];
+//! The below method of adding links is intermittent and does not work when the site is deployed!! It has been removed and Link have been added to replace them.
+// const settings = [
+//   { label: "Profile", link: "/profile" },
+//   { label: "Dashboard", link: "/dashboard" },
+//   { label: "Logout", link: "/" },
+// ];
 
 const TopNavBar = () => {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -72,15 +73,26 @@ const TopNavBar = () => {
               onClose={handleCloseUserMenu}
             >
             <>
+            <MenuItem>
               <Link className="top-navbar-menu-item" to="/profile" > Profile</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link className="top-navbar-menu-item" to="/dashboard" > Dashboard</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link className="top-navbar-menu-item" to="/" > Logout</Link>
+            </MenuItem>
             </>
-              {settings.map((setting) => (
+
+{/* //! There is an issue with the below code when the app is deployed. */}
+
+              {/* {settings.map((setting) => (
                 <MenuItem key={setting.label} onClick={handleCloseUserMenu}>
                   <a className="top-navbar-menu-item" href={setting.link}>
                     {setting.label}
                   </a>
                 </MenuItem>
-              ))}
+              ))} */}
             </Menu>
           </Box>
         </Toolbar>
