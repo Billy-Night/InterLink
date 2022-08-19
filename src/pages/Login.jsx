@@ -26,7 +26,6 @@ const Login = () => {
           display: "flex",
           flexDirection: "column",
           gap: "2rem",
-          marginTop: "2rem",
           marginBottom: "2rem",
           alignItems: "center",
           justifyContent: "center",

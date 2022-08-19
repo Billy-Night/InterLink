@@ -31,8 +31,6 @@ const LogReg = () => {
           gap: "2rem",
           alignItems: "center",
           justifyContent: "center",
-          
-          color: "#183650",
         }}
         ></div>
       </header>

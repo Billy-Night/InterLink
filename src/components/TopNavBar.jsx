@@ -3,6 +3,7 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
+
 // import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
@@ -12,6 +13,7 @@ import MenuItem from "@mui/material/MenuItem";
 import logo from "../images/logo-apside.png";
 import "./TopNavBar.css";
 import { Link } from "react-router-dom";
+
 
 // const pages = ['Products', 'Pricing', 'Blog'];
 //! The below method of adding links is intermittent and does not work when the site is deployed!! It has been removed and Link have been added to replace them.
