@@ -14,6 +14,7 @@ This project was part of a 48h Hackathon set-up by the Wild Code School with the
   - [Introduction](#introduction)
   - [Content](#content)
   - [Installation](#installation)
+  - [Main Features](#main-features)
   - [Future Development](#future-development)
 
 ## Installation
@@ -33,6 +34,9 @@ It can be set-up by the following:
   - Third:
     - ``` npm start ```
 
+## Main Features
+
+The main features of the application is it's ability to filter by which technologies were used to create the projects and also the ability to expand each project and view them in more details.
 ## Future Development
 
 This application was set-up to display the solution to AppSides problem, with the time restrictions the frontend of the application was developed. In the future it would be beneficial to develop the backend and an admin sections for the AppSide management team.
