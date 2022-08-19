@@ -71,6 +71,7 @@ const TopNavBar = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
+              <a className="top-navbar-menu-item" href="/profile" > Profile</a>
               {settings.map((setting) => (
                 <MenuItem key={setting.label} onClick={handleCloseUserMenu}>
                   <a className="top-navbar-menu-item" href={setting.link}>

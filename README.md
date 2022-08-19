@@ -13,9 +13,20 @@ This project was part of a 48h Hackathon set-up by the Wild Code School with the
 - [InterLink](#interlink)
   - [Introduction](#introduction)
   - [Content](#content)
+  - [Deployment](#deployment)
   - [Installation](#installation)
   - [Main Features](#main-features)
   - [Future Development](#future-development)
+
+## Deployment
+
+This application is deployed at the following:
+
+`https://interlink.netlify.app/`
+
+It's status is :
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/198425ed-870c-4873-b784-4aa5a3443f7d/deploy-status)](https://app.netlify.com/sites/interlink/deploys)
 
 ## Installation
 
