@@ -1,6 +1,6 @@
 # InterLink
 
-<img src="/Users/billy/Wild Code School/hackathon_2_real/hackathon-2/src/images/logo-apside.png" alt="AppSide Logo">
+![alt text](https://github.com/Billy-Night/InterLink/blob/main/logo-apside.png?raw=true)
 
 The all in one application that will solve AppSides project and resource management needs.
 
