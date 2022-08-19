@@ -12,6 +12,7 @@ const UserTech = () => {
   let arrayWithDuplicates = [];
   const result = arrayOfArrays.forEach((array) => array.forEach((e) => userData.technologies.includes(e) ? arrayWithDuplicates.push(e) : null));
   console.log(arrayWithDuplicates);
+  console.log(result);
 
   const matchArray = [...new Set(arrayWithDuplicates)];
   console.log(matchArray);
