@@ -1,6 +1,6 @@
 # InterLink
 
-![alt text](https://github.com/Billy-Night/InterLink/blob/main/logo-apside.png?raw=true)
+![alt text](https://github.com/Billy-Night/InterLink/blob/main/src/images/logo-apside.png)
 
 The all in one application that will solve AppSides project and resource management needs.
 
